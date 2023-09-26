@@ -1,0 +1,11 @@
+.header__search-form {
+  max-width: 970px;
+  height: 48px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content:space-between;
+  background-color: rgba(var(--color-transparent),0.2);
+  padding: 0 20px;
+  border-radius: 36px;
+}

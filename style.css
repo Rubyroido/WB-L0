@@ -5,4 +5,23 @@
 
 @import url(./blocks/body/body.css);
 @import url(./blocks/page/page.css);
+
+@import url(./blocks/header/header.css);
+
+@import url(./blocks/header/__logo-container/header__logo-container.css);
+@import url(./blocks/header/__button-menu/header__button-menu.css);
+@import url(./blocks/header/__burger/header__burger.css);
+@import url(./blocks/header/__logo/header__logo.css);
+
+@import url(./blocks/header/__search-form/header__search-form.css);
+@import url(./blocks/header/__input/header__input.css);
+@import url(./blocks/header/__button-search/header__button-search.css);
+
+@import url(./blocks/header/__navigation/header__navigation.css);
+@import url(./blocks/header/__button-profile/header__button-profile.css);
+@import url(./blocks/header/__profile-logo/header__profile-logo.css);
+@import url(./blocks/header/__button-basket/header__button-basket.css);
+@import url(./blocks/header/__basket-logo/header__basket-logo.css);
+@import url(./blocks/header/__counter/header__counter.css);
+
 @import url(./blocks/main/main.css);

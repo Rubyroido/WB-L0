@@ -1,0 +1,11 @@
+.header__basket-logo {
+  display: block;
+  width: 28px;
+  height: 28px;
+  background-image: url(../../../images/basket-button.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto 6px;
+  padding: 0;
+  box-sizing: border-box;
+}

@@ -11,24 +11,50 @@
 <body class="body">
   <div class="page">
     <header class="header">
-      <button class="header__button"></button>
-      <h1 class="header__logo">ТОВАРЫ И ТОЧКА</h1>
-      <input class="header__input">
-      <button class="header__button-profile">
-        <div class="header__profile-logo"></div>
-        <p class="header__profile">Профиль</p>
-      </button>
-      <button class="header__button-basket">
-        <div class="header__basket-logo"></div>
-        <p class="header__basket">Корзина</p>
-        <div class="header__counter"></div>
-      </button>
+      <div class="header__logo-container">
+        <button class="header__button-menu">
+          <span class="header__burger"></span>
+        </button>
+        <h1 class="header__logo">ТОВАРЫ И ТОЧКА</h1>
+      </div>
+      <form class="header__search-form">
+        <input type="text" class="header__input" placeholder="Я ищу..." />
+        <button type="submit" class="header__button-search"></button>
+      </form>
+      <div class="header__navigation">
+        <a href="#" class="header__button-profile">
+          <span class="header__profile-logo"></span>
+          Профиль
+        </a>
+        <a href="#" class="header__button-basket">
+          <span class="header__basket-logo"></span>
+          Корзина
+          <span class="header__counter">2</span>
+        </a>
+      </div>
     </header>
 
     <main class="main">
       <form class="basket">
         <div class="basket__form-content">
+          <div class="basket__items-list">
+            <h2>Корзина</h2>
+            <div class="accordion__header">
+              <label class="accordion__checkbox">
+                <input type="checkbox" />
+                <span class="accordion__checkbox-text">Выбрать все</span>
+                <div class="accordion__icon"></div>
+              </label>
+            </div>
+            <ul class="accordion__body">
 
+            </ul>
+
+          </div>
+          <div class="basket__items-unavailable"></div>
+          <div class="basket__delivery"></div>
+          <div class="basket__payment"></div>
+          <div class="basket__user-data"></div>
         </div>
         <div class="basket__form-sidebar">
 
@@ -40,7 +66,18 @@
       <p class="footer__copyright">&copy 2022 ООО «Товары и точка»</p>
     </footer>
 
+    <!-- заготовка для карточки товара -->
+    <template>
+      <li>
+        <label>
+          <input type="checkbox" />
+        </label>
+
+      </li>
+    </template>
+
   </div>
+
 
   <script src="./index.js"></script>
 </body>

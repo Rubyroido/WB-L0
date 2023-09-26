@@ -1,0 +1,14 @@
+.header__button-search {
+  width: 24px;
+  height: 24px;
+  background-image: url(../../../images/search-button.svg);
+  background-repeat: no-repeat;
+  background-color: var(--color-white),;
+  background-position: center;
+  opacity: 0.5;
+  border: none;
+}
+
+.header__button-search:hover {
+  cursor: pointer;
+}

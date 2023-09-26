@@ -1,4 +1,5 @@
 .body {
   width: 100vw;
   background-color: var(--color-violet);
+  font-family: 'SegoeUI', Arial, Helvetica, sans-serif;
 }
