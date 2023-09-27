@@ -1,0 +1,9 @@
+.basket__form-sidebar {
+  max-width: 429px;
+  max-height: 572px;
+  border-radius: 16px;
+  box-shadow: 0px 2px 10px 0px #00000026;
+  box-sizing: border-box;
+  padding: 14px 24px 24px;
+  background-color: var(--color-white);
+}

@@ -1,0 +1,13 @@
+.basket__form-withdrawal {
+  background-color: var(--color-grey);
+  padding: 8px 8px 12px;
+  margin: 10px 0 0;
+  box-sizing: border-box;
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}

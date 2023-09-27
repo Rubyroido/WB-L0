@@ -1,0 +1,11 @@
+.basket__form-edit {
+  background-image: url(../../../images/edit-button.svg);
+  background-color: var(--color-white);
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  border: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}

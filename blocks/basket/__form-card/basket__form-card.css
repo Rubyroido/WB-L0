@@ -1,0 +1,6 @@
+.basket__form-card {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+}

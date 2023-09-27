@@ -1,0 +1,10 @@
+.basket__form-date {
+  max-width: 47px;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: var(--color-pink);
+  border-bottom: dashed 1px rgba(203, 17, 171, 0.2);
+}

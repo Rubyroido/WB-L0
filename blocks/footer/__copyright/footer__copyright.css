@@ -1,0 +1,8 @@
+.footer__copyright {
+  color: var(--color-white);
+  opacity: 0.7;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  margin: 24px auto;
+}

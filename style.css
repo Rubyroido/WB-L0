@@ -25,3 +25,37 @@
 @import url(./blocks/header/__counter/header__counter.css);
 
 @import url(./blocks/main/main.css);
+@import url(./blocks/basket/basket.css);
+
+@import url(./blocks/basket/__form-sidebar/basket__form-sidebar.css);
+@import url(./blocks/basket/__form-description/basket__form-description.css);
+@import url(./blocks/basket/__form-line/basket__form-line.css);
+@import url(./blocks/basket/__form-total/basket__form-total.css);
+@import url(./blocks/basket/__form-preferences/basket__form-preferences.css);
+@import url(./blocks/basket/__form-preference/basket__form-preference.css);
+@import url(./blocks/basket/__form-edit/basket__form-edit.css);
+@import url(./blocks/basket/__form-adress/basket__form-adress.css);
+@import url(./blocks/basket/__form-date/basket__form-date.css);
+@import url(./blocks/basket/__form-preference-header/basket__form-preference-header.css);
+@import url(./blocks/basket/__form-preference-name/basket__form-preference-name.css);
+@import url(./blocks/basket/__form-refusal/basket__form-refusal.css);
+@import url(./blocks/basket/__form-refusal-img/basket__form-refusal-img.css);
+@import url(./blocks/basket/__form-refusal-text/basket__form-refusal-text.css);
+@import url(./blocks/basket/__form-refusal-hint/basket__form-refusal-hint.css);
+@import url(./blocks/basket/__form-card/basket__form-card.css);
+@import url(./blocks/basket/__form-card-logo/basket__form-card-logo.css);
+@import url(./blocks/basket/__form-card-number/basket__form-card-number.css);
+@import url(./blocks/basket/__form-withdrawal/basket__form-withdrawal.css);
+@import url(./blocks/basket/__form-withdrawal-container/basket__form-withdrawal-container.css);
+@import url(./blocks/basket/__form-withdrawal-checkbox/basket__form-withdrawal-checkbox.css);
+@import url(./blocks/basket/__form-withdrawal-text/basket__form-withdrawal-text.css);
+@import url(./blocks/basket/__form-withdrawal-hint/basket__form-withdrawal-hint.css);
+@import url(./blocks/basket/__form-submit/basket__form-submit.css);
+@import url(./blocks/basket/__form-rules/basket__form-rules.css);
+@import url(./blocks/basket/__form-rules-img/basket__form-rules-img.css);
+@import url(./blocks/basket/__form-rules-approval/basket__form-rules-approval.css);
+
+@import url(./blocks/footer/footer.css);
+@import url(./blocks/footer/__copyright/footer__copyright.css);
+
+@import url(./blocks/custom-checkbox/custom-checkbox.css);

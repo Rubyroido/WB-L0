@@ -1,0 +1,16 @@
+.basket__form-line {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.basket__form-line > * {
+  margin: 0;
+  padding: 0;
+}

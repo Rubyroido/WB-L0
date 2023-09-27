@@ -1,0 +1,16 @@
+.basket__form-total {
+  padding: 0;
+  margin: 0 0 8px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.basket__form-total:first-child {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.basket__form-total:last-child {
+  font-size: 24px;
+  line-height: 32px;
+}

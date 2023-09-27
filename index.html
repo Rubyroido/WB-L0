@@ -46,6 +46,7 @@
                 <div class="accordion__icon"></div>
               </label>
             </div>
+
             <ul class="accordion__body">
 
             </ul>
@@ -57,7 +58,68 @@
           <div class="basket__user-data"></div>
         </div>
         <div class="basket__form-sidebar">
+          <ul class="basket__form-description">
+            <li class="basket__form-line basket__form-total">
+              <h3>Итого</h3>
+              <h3>100000</h3>
+            </li>
+            <li class="basket__form-line basket__form-goods">
+              <span>100 товаров</span>
+              <span>110000</span>
+            </li>
+            <li class="basket__form-line basket__form-discount">
+              <span>Скидка</span>
+              <span>-10000</span>
+            </li>
+            <li class="basket__form-line basket__form-delivery">
+              <span>Доставка</span>
+              <span>Бесплатно</span>
+            </li>
+          </ul>
 
+          <ul class="basket__form-preferences">
+            <li class="basket__form-preference">
+              <div class="basket__form-preference-header">
+                <h3 class="basket__form-preference-name">Доставка в пункт выдачи</h3>
+                <button class="basket__form-edit"></button>
+              </div>
+              <p class="basket__form-adress">Бишкек, улица Ахматбека Суюмбаева, 12/1</p>
+              <span class="basket__form-date">5-8 фев</span>
+              <div class="basket__form-refusal">
+                <span class="basket__form-refusal-img"></span>
+                <p class="basket__form-refusal-text">Обратная доставка товаров на склад при отказе —
+                  <span data-title="Если товары вам не подойдут, мы вернем их обратно на склад — это бесплатно"
+                    class="basket__form-refusal-hint">
+                    бесплатно
+                  </span>
+                </p>
+              </div>
+            </li>
+            <li class="basket__form-preference">
+              <div class="basket__form-preference-header">
+                <h3 class="basket__form-preference-name">Оплата картой</h3>
+                <button class="basket__form-edit"></button>
+              </div>
+              <div class="basket__form-card">
+                <img src="./images/mir.svg" alt="логотип" class="basket__form-card-logo">
+                <p class="basket__form-card-number">1234 12** **** 1234</p>
+              </div>
+              <div class="basket__form-withdrawal">
+                <div class="basket__form-withdrawal-container custom-checkbox">
+                  <input type="checkbox" id="toggle" class="basket__form-withdrawal-checkbox custom-checkbox__button">
+                  <label for="toggle" class="custom-checkbox__label"></label>
+                  <span class="basket__form-withdrawal-text">Списать оплату сразу</span>
+                </div>
+                <span class="basket__form-withdrawal-hint">Спишем оплату с карты при получении</span>
+              </div>
+            </li>
+          </ul>
+
+          <button type="submit" class="basket__form-submit">Заказать</button>
+          <div class="basket__form-rules">
+            <span class="basket__form-rules-img"></span>
+            <p class="basket__form-rules-approval">Соглашаюсь с правилами пользования торговой площадкой и возврата</p>
+          </div>
         </div>
       </form>
     </main>
