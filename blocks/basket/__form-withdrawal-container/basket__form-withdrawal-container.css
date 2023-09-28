@@ -1,4 +1,5 @@
 .basket__form-withdrawal-container {
   display: flex;
   gap: 8px;
+  align-self: start !important;
 }

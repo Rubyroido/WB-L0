@@ -1,0 +1,9 @@
+.accordion__item-counter {
+  width: 100px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-white);
+  border-radius: 8px;
+}

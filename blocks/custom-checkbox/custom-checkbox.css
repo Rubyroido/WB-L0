@@ -1,3 +1,7 @@
+.custom-checkbox {
+  align-self: center;
+}
+
 .custom-checkbox__button {
   display: none;
 }

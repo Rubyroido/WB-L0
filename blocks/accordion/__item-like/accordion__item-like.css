@@ -1,0 +1,13 @@
+.accordion__item-like {
+  background-image: url(../../../images/like-button.svg);
+  background-color: var(--color-grey);
+  background-position: center;
+  width: 20px;
+  height: 20px;
+  border: none;
+}
+
+.accordion__item-like:hover {
+  cursor: pointer;
+  background-image: url(../../../images/like-button-hover.svg)
+}

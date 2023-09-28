@@ -27,6 +27,10 @@
 @import url(./blocks/main/main.css);
 @import url(./blocks/basket/basket.css);
 
+@import url(./blocks/basket/__form-content/basket__form-content.css);
+@import url(./blocks/basket/__header/basket__header.css);
+@import url(./blocks/basket/__items-list/basket__items-list.css);
+
 @import url(./blocks/basket/__form-sidebar/basket__form-sidebar.css);
 @import url(./blocks/basket/__form-description/basket__form-description.css);
 @import url(./blocks/basket/__form-line/basket__form-line.css);
@@ -54,6 +58,33 @@
 @import url(./blocks/basket/__form-rules/basket__form-rules.css);
 @import url(./blocks/basket/__form-rules-img/basket__form-rules-img.css);
 @import url(./blocks/basket/__form-rules-approval/basket__form-rules-approval.css);
+
+@import url(./blocks/accordion/accordion.css);
+@import url(./blocks/accordion/__header/accordion__header.css);
+@import url(./blocks/accordion/__checkbox/accordion__checkbox.css);
+@import url(./blocks/accordion/__icon/accordion__icon.css);
+@import url(./blocks/accordion/__body/accordion__body.css);
+@import url(./blocks/accordion/__item/accordion__item.css);
+@import url(./blocks/accordion/__item-info/accordion__item-info.css);
+
+@import url(./blocks/accordion/__item-description/accordion__item-description.css);
+@import url(./blocks/accordion/__item-name/accordion__item-name.css);
+@import url(./blocks/accordion/__item-store/accordion__item-store.css);
+@import url(./blocks/accordion/__item-shop/accordion__item-shop.css);
+@import url(./blocks/accordion/__item-hint/accordion__item-hint.css);
+
+@import url(./blocks/accordion/__item-interaction/accordion__item-interaction.css);
+@import url(./blocks/accordion/__item-counter/accordion__item-counter.css);
+@import url(./blocks/accordion/__item-decrease/accordion__item-decrease.css);
+@import url(./blocks/accordion/__item-value/accordion__item-value.css);
+@import url(./blocks/accordion/__item-increase/accordion__item-increase.css);
+@import url(./blocks/accordion/__item-stock/accordion__item-stock.css);
+@import url(./blocks/accordion/__item-buttons/accordion__item-buttons.css);
+@import url(./blocks/accordion/__item-like/accordion__item-like.css);
+@import url(./blocks/accordion/__item-delete/accordion__item-delete.css);
+@import url(./blocks/accordion/__item-total/accordion__item-total.css);
+@import url(./blocks/accordion/__item-cost/accordion__item-cost.css);
+@import url(./blocks/accordion/__item-discount/accordion__item-discount.css);
 
 @import url(./blocks/footer/footer.css);
 @import url(./blocks/footer/__copyright/footer__copyright.css);

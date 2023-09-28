@@ -36,28 +36,33 @@
 
     <main class="main">
       <form class="basket">
-        <div class="basket__form-content">
+        <!-- корзина -->
+        <section class="basket__form-content">
+          <h2 class="basket__header">Корзина</h2>
+
           <div class="basket__items-list">
-            <h2>Корзина</h2>
-            <div class="accordion__header">
-              <label class="accordion__checkbox">
-                <input type="checkbox" />
-                <span class="accordion__checkbox-text">Выбрать все</span>
+            <div class="accordion">
+              <div class="accordion__header">
+                <div class="custom-checkbox accordion__checkbox">
+                  <input type="checkbox" id="toggle" class="custom-checkbox__button">
+                  <label for="toggle" class="custom-checkbox__label"></label>
+                  <span class="accordion__checkbox-text">Выбрать все</span>
+                </div>
                 <div class="accordion__icon"></div>
-              </label>
+              </div>
+
+              <ul class="accordion__body"></ul>
             </div>
-
-            <ul class="accordion__body">
-
-            </ul>
-
           </div>
+
           <div class="basket__items-unavailable"></div>
           <div class="basket__delivery"></div>
           <div class="basket__payment"></div>
           <div class="basket__user-data"></div>
-        </div>
-        <div class="basket__form-sidebar">
+        </section>
+
+        <!-- сайдбар -->
+        <section class="basket__form-sidebar">
           <ul class="basket__form-description">
             <li class="basket__form-line basket__form-total">
               <h3>Итого</h3>
@@ -88,7 +93,7 @@
               <div class="basket__form-refusal">
                 <span class="basket__form-refusal-img"></span>
                 <p class="basket__form-refusal-text">Обратная доставка товаров на склад при отказе —
-                  <span data-title="Если товары вам не подойдут, мы вернем их обратно на склад — это бесплатно"
+                  <span data-title="Если товары вам не подойдут, мы вернем их обратно на склад — это бесплатно"
                     class="basket__form-refusal-hint">
                     бесплатно
                   </span>
@@ -105,8 +110,8 @@
                 <p class="basket__form-card-number">1234 12** **** 1234</p>
               </div>
               <div class="basket__form-withdrawal">
-                <div class="basket__form-withdrawal-container custom-checkbox">
-                  <input type="checkbox" id="toggle" class="basket__form-withdrawal-checkbox custom-checkbox__button">
+                <div class="custom-checkbox basket__form-withdrawal-container">
+                  <input type="checkbox" id="toggle" class="custom-checkbox__button basket__form-withdrawal-checkbox ">
                   <label for="toggle" class="custom-checkbox__label"></label>
                   <span class="basket__form-withdrawal-text">Списать оплату сразу</span>
                 </div>
@@ -120,7 +125,7 @@
             <span class="basket__form-rules-img"></span>
             <p class="basket__form-rules-approval">Соглашаюсь с правилами пользования торговой площадкой и возврата</p>
           </div>
-        </div>
+        </section>
       </form>
     </main>
 
@@ -129,19 +134,56 @@
     </footer>
 
     <!-- заготовка для карточки товара -->
-    <template>
-      <li>
-        <label>
-          <input type="checkbox" />
-        </label>
+    <template id="item-template">
+      <li class="accordion__item">
+        <div class="custom-checkbox">
+          <input type="checkbox" id="toggle" class="custom-checkbox__button">
+          <label for="toggle" class="custom-checkbox__label"></label>
+        </div>
 
+        <img src="" alt="" class="accordion__item-img">
+        <!-- <span class="accordion__item-size-mob"></span> -->
+
+        <div class="accordion__item-description">
+          <p class="accordion__item-name"></p>
+          <div class="accordion__item-info">
+            <span class="accordion__item-color"></span>
+            <span class="accordion__item-size"></span>
+          </div>
+          <div class="accordion__item-store">
+            <span class="accordion__item-storage"></span>
+            <div class="accordion__item-shop">
+              <span class="accordion__item-seller"></span>
+              <span class="accordion__item-hint"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion__item-interaction">
+          <div class="accordion__item-counter">
+            <button class="accordion__item-decrease">-</button>
+            <span class="accordion__item-value"></span>
+            <button class="accordion__item-increase">+</button>
+          </div>
+          <span class="accordion__item-stock"></span>
+          <div class="accordion__item-buttons">
+            <button class="accordion__item-like"></button>
+            <button class="accordion__item-delete"></button>
+          </div>
+        </div>
+
+        <div class="accordion__item-total">
+          <span class="accordion__item-cost"></span>
+          <s>
+            <span class="accordion__item-discount"></span>
+          </s>
+        </div>
       </li>
     </template>
 
   </div>
 
-
-  <script src="./index.js"></script>
+  <script defer type="module" src="./index.js"></script>
 </body>
 
 </html>

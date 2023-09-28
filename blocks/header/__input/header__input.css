@@ -1,6 +1,6 @@
 .header__input {
   max-width: 898px;
-  width: 100vw;
+  width: 90vw;
   border: none;
   background-color: var(--color-violet),;
   color: var(--color-white);

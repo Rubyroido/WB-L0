@@ -1,0 +1,8 @@
+.accordion__item {
+  display: grid;
+  grid-template-columns: 0.1fr 0.7fr 5fr 0.7fr 1.1fr;
+  grid-template-rows: 1fr;
+  grid-auto-flow: row;
+  gap: 12px;
+  width: 100%;
+}

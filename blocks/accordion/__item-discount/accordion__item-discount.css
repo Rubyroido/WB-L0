@@ -1,0 +1,9 @@
+.accordion__item-discount {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: right;
+  text-decoration:underline dashed;
+  color: var(--color-gray);
+}

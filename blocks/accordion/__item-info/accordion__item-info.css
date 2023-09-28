@@ -1,0 +1,8 @@
+.accordion__item-info {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}

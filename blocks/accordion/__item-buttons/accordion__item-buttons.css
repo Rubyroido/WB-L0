@@ -1,0 +1,6 @@
+.accordion__item-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 16px;
+}

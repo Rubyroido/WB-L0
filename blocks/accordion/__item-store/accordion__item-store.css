@@ -1,0 +1,9 @@
+.accordion__item-store {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: var(--color-gray);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}

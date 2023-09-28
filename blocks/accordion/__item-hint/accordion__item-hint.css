@@ -1,0 +1,8 @@
+.accordion__item-hint {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url(../../../images/seller.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}

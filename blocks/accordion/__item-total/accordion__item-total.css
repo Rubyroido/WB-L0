@@ -1,0 +1,12 @@
+.accordion__item-total {
+  max-width: 110px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: end;
+}
+
+.accordion__item-total > s {
+  color: var(--color-gray);
+}

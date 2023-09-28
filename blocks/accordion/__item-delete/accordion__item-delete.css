@@ -1,0 +1,13 @@
+.accordion__item-delete {
+  background-image: url(../../../images/delete-button.svg);
+  background-color: var(--color-grey);
+  background-position: center;
+  width: 20px;
+  height: 20px;
+  border: none;
+}
+
+.accordion__item-delete:hover {
+  cursor: pointer;
+  background-image: url(../../../images/delete-button-hover.svg);
+}

@@ -1,0 +1,7 @@
+.accordion__item-description {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 275px;
+  width: 100vw;
+}
