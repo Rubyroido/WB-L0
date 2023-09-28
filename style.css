@@ -64,6 +64,7 @@
 @import url(./blocks/accordion/__checkbox/accordion__checkbox.css);
 @import url(./blocks/accordion/__icon/accordion__icon.css);
 @import url(./blocks/accordion/__body/accordion__body.css);
+@import url(./blocks/accordion/__body/_inactive/accordion__body_inactive.css);
 @import url(./blocks/accordion/__item/accordion__item.css);
 @import url(./blocks/accordion/__item-info/accordion__item-info.css);
 

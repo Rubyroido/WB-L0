@@ -3,6 +3,16 @@ import { initialCards } from "./utils/initialCards.js";
 const accordionBody = document.querySelector('.accordion__body')
 const cardTemplate = document.querySelector('#item-template');
 
+window.addEventListener('click', (event) => {
+  if (event.target.className !== 'accordion__header') {
+    return
+  } else {
+    const accordion = event.target.parentNode;
+    const currentAccordion = accordion.querySelector('.accordion__body');
+    currentAccordion.classList.toggle('accordion__body_inactive');
+  }
+})
+
 function createCard(item) {
   const card = cardTemplate.content.querySelector('.accordion__item').cloneNode(true);
   const cardImage = card.querySelector('.accordion__item-img');
@@ -28,9 +38,11 @@ function createCard(item) {
 
   const cardCost = card.querySelector('.accordion__item-cost');
   const cardDiscount = card.querySelector('.accordion__item-discount');
+
   let totalCost = item.price * item.value;
   let discountedCost = totalCost - (totalCost * item.discount);
-  cardCost.textContent = `${discountedCost} сом`;
+  let result = discountedCost.toLocaleString();
+  cardCost.textContent = `${result} сом`;
   cardDiscount.textContent = `${totalCost} сом`;
 
   return card;
