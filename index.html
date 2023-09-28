@@ -55,7 +55,17 @@
             </div>
           </div>
 
-          <div class="basket__items-unavailable"></div>
+          <div class="basket__items-unavailable">
+            <div class="accordion">
+              <div class="accordion__header">
+                <h4 class="accordion__header-text">Отсутствуют · 3 товара</h4>
+                <div class="accordion__icon"></div>
+              </div>
+              <div class="accordion__body accordion__body-unavailable">
+              </div>
+            </div>
+          </div>
+
           <div class="basket__delivery"></div>
           <div class="basket__payment"></div>
           <div class="basket__user-data"></div>
@@ -181,6 +191,29 @@
       </li>
     </template>
 
+    <!-- Заготовка для недоступных товаров -->
+    <template id="unavailable-template">
+      <li class="accordion__item accordion__item-unavailable">
+        <img src="" alt="" class="accordion__item-img">
+        <!-- <span class="accordion__item-size-mob"></span> -->
+
+        <div class="accordion__item-description">
+          <p class="accordion__item-name"></p>
+          <div class="accordion__item-info">
+            <span class="accordion__item-color"></span>
+            <span class="accordion__item-size"></span>
+          </div>
+        </div>
+
+        <div class="accordion__item-interaction">
+          <div class="accordion__item-buttons">
+            <button class="accordion__item-like"></button>
+            <button class="accordion__item-delete"></button>
+          </div>
+        </div>
+
+      </li>
+    </template>
   </div>
 
   <script defer type="module" src="./index.js"></script>

@@ -1,7 +1,9 @@
 import { initialCards } from "./utils/initialCards.js";
 
-const accordionBody = document.querySelector('.accordion__body')
+const accordionBody = document.querySelector('.accordion__body');
+const accordionBodyUnavailable = document.querySelector('.accordion__body-unavailable');
 const cardTemplate = document.querySelector('#item-template');
+const unavailableTemplate = document.querySelector('#unavailable-template');
 
 window.addEventListener('click', (event) => {
   if (event.target.className !== 'accordion__header') {
@@ -51,8 +53,30 @@ function createCard(item) {
   return card;
 }
 
+function createUnavailableCard(item) {
+  const card = unavailableTemplate.content.querySelector('.accordion__item').cloneNode(true);
+  const cardImage = card.querySelector('.accordion__item-img');
+  cardImage.src = item.image;
+  cardImage.alt = item.name;
+
+  card.querySelector('.accordion__item-name').textContent = item.name;
+  if (item.color !== null) {
+    card.querySelector('.accordion__item-color').textContent = `Цвет: ${item.color}`;
+  }
+  if (item.size !== null) {
+    card.querySelector('.accordion__item-size').textContent = `Размер: ${item.size}`;
+  }
+
+  return card;
+}
+
 const cards = initialCards.map((item) => {
   return createCard(item);
 })
 
+const unavailableCards = initialCards.map((item) => {
+  return createUnavailableCard(item);
+})
+
 accordionBody.append(...cards);
+accordionBodyUnavailable.append(...unavailableCards);

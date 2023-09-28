@@ -1,0 +1,8 @@
+.accordion__item-unavailable {
+  display: grid;
+  grid-template-columns: 0.7fr 4.5fr 0.7fr 0.9fr;
+  grid-template-rows: 1fr;
+  grid-auto-flow: row;
+  gap: 12px;
+  width: 100%;
+}
