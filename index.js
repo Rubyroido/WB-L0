@@ -9,7 +9,10 @@ window.addEventListener('click', (event) => {
   } else {
     const accordion = event.target.parentNode;
     const currentAccordion = accordion.querySelector('.accordion__body');
+    const accordionButton = accordion.querySelector('.accordion__icon');
+
     currentAccordion.classList.toggle('accordion__body_inactive');
+    accordionButton.classList.toggle('accordion__icon_active');
   }
 })
 
