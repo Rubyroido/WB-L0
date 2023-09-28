@@ -1,0 +1,6 @@
+.delivery__star {
+  display: block;
+  background-image: url(../../../images/star.svg);
+  width: 12px;
+  height: 16px;
+}

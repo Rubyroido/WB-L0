@@ -1,0 +1,10 @@
+.delivery {
+  width: 100%;
+  background-color: var(--color-white);
+  border-radius: 16px;
+  margin: 40px 0 0;
+  padding: 16px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}

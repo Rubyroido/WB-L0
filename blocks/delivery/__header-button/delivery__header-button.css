@@ -1,0 +1,12 @@
+.delivery__header-button {
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  background-color: var(--color-white);
+  color: var(--color-pink);
+}
+
+.delivery__header-button:hover {
+  cursor: pointer;
+}

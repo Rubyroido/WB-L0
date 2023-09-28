@@ -71,13 +71,11 @@
 @import url(./blocks/accordion/__item/accordion__item.css);
 @import url(./blocks/accordion/__item-unavailable/accordion__item-unavailable.css);
 @import url(./blocks/accordion/__item-info/accordion__item-info.css);
-
 @import url(./blocks/accordion/__item-description/accordion__item-description.css);
 @import url(./blocks/accordion/__item-name/accordion__item-name.css);
 @import url(./blocks/accordion/__item-store/accordion__item-store.css);
 @import url(./blocks/accordion/__item-shop/accordion__item-shop.css);
 @import url(./blocks/accordion/__item-hint/accordion__item-hint.css);
-
 @import url(./blocks/accordion/__item-interaction/accordion__item-interaction.css);
 @import url(./blocks/accordion/__item-counter/accordion__item-counter.css);
 @import url(./blocks/accordion/__item-decrease/accordion__item-decrease.css);
@@ -90,6 +88,30 @@
 @import url(./blocks/accordion/__item-total/accordion__item-total.css);
 @import url(./blocks/accordion/__item-cost/accordion__item-cost.css);
 @import url(./blocks/accordion/__item-discount/accordion__item-discount.css);
+
+@import url(./blocks/delivery/delivery.css);
+@import url(./blocks/delivery/__header/delivery__header.css);
+@import url(./blocks/delivery/__header-text/delivery__header-text.css);
+@import url(./blocks/delivery/__header-button/delivery__header-button.css);
+@import url(./blocks/delivery/__info/delivery__info.css);
+@import url(./blocks/delivery/__adress/delivery__adress.css);
+@import url(./blocks/delivery/__point/delivery__point.css);
+@import url(./blocks/delivery/__adress-text/delivery__adress-text.css);
+@import url(./blocks/delivery/__adress-info/delivery__adress-info.css);
+@import url(./blocks/delivery/__star/delivery__star.css);
+@import url(./blocks/delivery/__rating/delivery__rating.css);
+@import url(./blocks/delivery/__work-hours/delivery__work-hours.css);
+@import url(./blocks/delivery/__cost/delivery__cost.css);
+@import url(./blocks/delivery/__free/delivery__free.css);
+@import url(./blocks/delivery/__date/delivery__date.css);
+@import url(./blocks/delivery/__items/delivery__items.css);
+@import url(./blocks/delivery/__item/delivery__item.css);
+@import url(./blocks/delivery/__image/delivery__image.css);
+@import url(./blocks/delivery/__counter/delivery__counter.css);
+@import url(./blocks/delivery/__return/delivery__return.css);
+@import url(./blocks/delivery/__return-logo/delivery__return-logo.css);
+@import url(./blocks/delivery/__return-text/delivery__return-text.css);
+@import url(./blocks/delivery/__return-hint/delivery__return-hint.css);
 
 @import url(./blocks/footer/footer.css);
 @import url(./blocks/footer/__copyright/footer__copyright.css);
