@@ -114,6 +114,19 @@
 @import url(./blocks/delivery/__return-text/delivery__return-text.css);
 @import url(./blocks/delivery/__return-hint/delivery__return-hint.css);
 
+@import url(./blocks/payment/payment.css);
+@import url(./blocks/payment/__header/payment__header.css);
+@import url(./blocks/payment/__header-text/payment__header-text.css);
+@import url(./blocks/payment/__header-button/payment__header-button.css);
+@import url(./blocks/payment/__card/payment__card.css);
+@import url(./blocks/payment/__card-logo/payment__card-logo.css);
+@import url(./blocks/payment/__card-number/payment__card-number.css);
+@import url(./blocks/payment/__card-date/payment__card-date.css);
+@import url(./blocks/payment/__hint/payment__hint.css);
+
+@import url(./blocks/user-data/user-data.css);
+@import url(./blocks/user-data/__header/user-data__header.css);
+
 @import url(./blocks/footer/footer.css);
 @import url(./blocks/footer/__copyright/footer__copyright.css);
 

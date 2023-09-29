@@ -1,0 +1,14 @@
+.payment__header-button {
+  border: none;
+  color: var(--color-pink);
+  background-color: var(--color-white);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 0;
+  margin: 0;
+}
+
+.payment__header-button:hover {
+  cursor: pointer;
+}

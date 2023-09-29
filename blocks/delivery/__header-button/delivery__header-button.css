@@ -5,6 +5,8 @@
   line-height: 24px;
   background-color: var(--color-white);
   color: var(--color-pink);
+  margin: 0;
+  padding: 0;
 }
 
 .delivery__header-button:hover {

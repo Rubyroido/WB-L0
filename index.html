@@ -117,8 +117,34 @@
             </div>
           </div>
 
-          <div class="payment"></div>
-          <div class="user-data"></div>
+          <div class="payment">
+            <div class="payment__header">
+              <h3 class="payment__header-text">Способ оплаты</h3>
+              <button class="payment__header-button">Изменить</button>
+            </div>
+
+            <div class="payment__card">
+              <img class="payment__card-logo" src="./images/mir.svg">
+              <span class="payment__card-number">1234 56** **** 1234</span>
+              <span class="payment__card-date">01/30</span>
+            </div>
+            <p class="payment__hint">Спишем оплату с карты при получении</p>
+          </div>
+
+          <div class="user-data">
+            <h3 class="user-data__header">Получатель</h3>
+            <fieldset class="user-data__inputs">
+              <div class="user-data__person">
+                <input type="text" name="name" id="" required>
+                <input type="text" name="surname" id="" required>
+              </div>
+              <div class="user-data__contacts">
+                <input type="text" name="email" id="" required>
+                <input type="text" name="phone" id="" required>
+                <input type="text" name="itn" id="" required>
+              </div>
+            </fieldset>
+          </div>
         </section>
 
         <!-- сайдбар -->

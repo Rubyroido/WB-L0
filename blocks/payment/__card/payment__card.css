@@ -1,0 +1,5 @@
+.payment__card {
+  display: flex;
+  flex-direction: row;
+  margin: 16px 0 8px;
+}
