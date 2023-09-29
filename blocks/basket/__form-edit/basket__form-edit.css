@@ -9,3 +9,7 @@
   margin: 0;
   padding: 0;
 }
+
+.basket__form-edit:hover {
+  cursor: pointer;
+}
