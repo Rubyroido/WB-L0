@@ -1,0 +1,9 @@
+.user-data__input-container {
+  height: 64px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding-top: 18px;
+  position: relative;
+  box-sizing: border-box;
+}

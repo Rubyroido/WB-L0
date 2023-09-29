@@ -135,13 +135,34 @@
             <h3 class="user-data__header">Получатель</h3>
             <fieldset class="user-data__inputs">
               <div class="user-data__person">
-                <input type="text" name="name" id="" required>
-                <input type="text" name="surname" id="" required>
+                <div class="user-data__input-container">
+                  <input type="text" name="name" id="" class="user-data__input" placeholder=" " required>
+                  <label class="user-data__placeholder">Имя</label>
+                  <span class="user-data__error"></span>
+                </div>
+                <div class="user-data__input-container">
+                  <input type="text" name="surname" id="" class="user-data__input" placeholder=" " required>
+                  <label class="user-data__placeholder">Фамилия</label>
+                  <span class="user-data__error"></span>
+                </div>
               </div>
               <div class="user-data__contacts">
-                <input type="text" name="email" id="" required>
-                <input type="text" name="phone" id="" required>
-                <input type="text" name="itn" id="" required>
+                <div class="user-data__input-container">
+                  <input type="email" name="email" id="" class="user-data__input" placeholder=" " required>
+                  <label class="user-data__placeholder">Почта</label>
+                  <span class="user-data__error"></span>
+                </div>
+                <div class="user-data__input-container">
+                  <input type="number" name="phone" id="" class="user-data__input" placeholder=" " required>
+                  <label class="user-data__placeholder">Телефон</label>
+                  <span class="user-data__error"></span>
+                </div>
+                <div class="user-data__input-container">
+                  <input type="number" name="itn" id="" class="user-data__input" placeholder=" " required>
+                  <label class="user-data__placeholder">ИНН</label>
+                  <span class="user-data__error"></span>
+                  <span class="user-data__input-hint">Для таможенного оформления</span>
+                </div>
               </div>
             </fieldset>
           </div>

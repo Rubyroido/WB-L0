@@ -126,6 +126,14 @@
 
 @import url(./blocks/user-data/user-data.css);
 @import url(./blocks/user-data/__header/user-data__header.css);
+@import url(./blocks/user-data/__inputs/user-data__inputs.css);
+@import url(./blocks/user-data/__person/user-data__person.css);
+@import url(./blocks/user-data/__contacts/user-data__contacts.css);
+@import url(./blocks/user-data/__input-container/user-data__input-container.css);
+@import url(./blocks/user-data/__input/user-data__input.css);
+@import url(./blocks/user-data/__placeholder/user-data__placeholder.css);
+@import url(./blocks/user-data/__error/user-data__error.css);
+@import url(./blocks/user-data/__input-hint/user-data__input-hint.css);
 
 @import url(./blocks/footer/footer.css);
 @import url(./blocks/footer/__copyright/footer__copyright.css);

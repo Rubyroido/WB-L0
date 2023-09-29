@@ -1,0 +1,8 @@
+.user-data__inputs {
+  margin: 0;
+  padding: 0;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
