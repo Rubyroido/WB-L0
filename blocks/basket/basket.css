@@ -1,8 +1,8 @@
 .basket {
-  max-width: 1352px;
+  max-width: 1400px;
   height: 200vh;
   margin: 20px auto 0;
-  padding: 24px 0 0;
+  padding: 24px 24px 0;
   display: flex;
   gap: 32px;
   box-sizing: border-box;

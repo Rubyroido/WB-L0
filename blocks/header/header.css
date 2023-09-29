@@ -1,7 +1,10 @@
 .header {
-  max-width: 1356px;
-  width: 100vw;
+  max-width: 1400px;
+  width: 100%;
   margin: 16px auto;
+  padding: 0 22px 0;
   display: flex;
   gap: 32px;
+  justify-content: space-between;
+  box-sizing: border-box;
 }
