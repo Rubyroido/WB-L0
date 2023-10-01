@@ -1,0 +1,13 @@
+.popup-delivery__courier {
+  flex: 1;
+  height: 36px;
+  background-color: var(--color-white);
+  border: 2px solid var(--color-pink);
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 16px;
+  padding: 0 0 2px;
+  box-sizing: border-box;
+}
+

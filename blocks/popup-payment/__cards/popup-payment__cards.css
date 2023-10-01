@@ -1,0 +1,8 @@
+.popup-payment__cards {
+  padding: 0;
+  margin: 13px 0 139px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}

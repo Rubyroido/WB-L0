@@ -29,7 +29,7 @@
         <a href="#" class="header__button-basket">
           <span class="header__basket-logo"></span>
           Корзина
-          <span class="header__counter">2</span>
+          <span class="header__counter">3</span>
         </a>
       </div>
     </header>
@@ -69,7 +69,7 @@
           <div class="delivery">
             <div class="delivery__header">
               <h3 class="delivery__header-text">Способ доставки</h3>
-              <button class="delivery__header-button">Изменить</button>
+              <button type="button" class="delivery__header-button">Изменить</button>
             </div>
             <div class="delivery__info">
               <span class="delivery__point">Пункт выдачи</span>
@@ -120,7 +120,7 @@
           <div class="payment">
             <div class="payment__header">
               <h3 class="payment__header-text">Способ оплаты</h3>
-              <button class="payment__header-button">Изменить</button>
+              <button type="button" class="payment__header-button">Изменить</button>
             </div>
 
             <div class="payment__card">
@@ -218,7 +218,8 @@
               </div>
               <div class="basket__form-withdrawal">
                 <div class="custom-checkbox basket__form-withdrawal-container">
-                  <input type="checkbox" id="toggle-sidebar" class="custom-checkbox__button basket__form-withdrawal-checkbox ">
+                  <input type="checkbox" id="toggle-sidebar"
+                    class="custom-checkbox__button basket__form-withdrawal-checkbox ">
                   <label for="toggle-sidebar" class="custom-checkbox__label"></label>
                   <span class="basket__form-withdrawal-text">Списать оплату сразу</span>
                 </div>
@@ -239,6 +240,67 @@
     <footer class="footer">
       <p class="footer__copyright">&copy 2022 ООО «Товары и точка»</p>
     </footer>
+
+    <!-- попап -->
+    <div class="popup">
+      <!-- форма выбора карты для полаты -->
+      <dialog class="popup-payment">
+        <form class="popup-payment__form" method="dialog">
+          <div class="popup-payment__header">
+            <h4 class="popup-payment__name">Способ оплаты</h4>
+            <button type="button" class="popup-payment__close"></button>
+          </div>
+          <fieldset class="popup-payment__cards">
+
+          </fieldset>
+          <button type="submit" class="popup-payment__submit">Выбрать</button>
+        </form>
+      </dialog>
+
+      <!-- форма выбора адреса доставки -->
+      <dialog class="popup-delivery">
+        <form class="popup-delivery__form" method="dialog">
+          <div class="popup-delivery__header">
+            <h4 class="popup-delivery__name">Способ доставки</h4>
+            <button type="button" class="popup-delivery__close"></button>
+          </div>
+          <div class="popup-delivery__type">
+            <button type="button" class="popup-delivery__claim">В пункт выдачи</button>
+            <button type="button" class="popup-delivery__courier">Курьером</button>
+          </div>
+          <fieldset class="popup-delivery__options">
+            <legend>Мои адреса</legend>
+          </fieldset>
+          <button type="submit" class="popup-delivery__submit">Выбрать</button>
+        </form>
+      </dialog>
+    </div>
+
+    <!-- заготовка для попапа доставки -->
+    <template id="delivery-template">
+      <div class="popup-delivery__option">
+        <div class="popup-delivery__adress-wrap">
+          <div class="custom-radio">
+            <input type="radio" id="" name="card-data" value="" class="custom-radio__button">
+            <label for="" class="custom-radio__label"></label>
+          </div>
+          <span class="popup-delivery__adress"></span>
+        </div>
+        <button type="button" class="popup-delivery__delete"></button>
+      </div>
+    </template>
+
+    <!-- заготовка для попапа оплаты -->
+    <template id="card-template">
+      <div class="popup-payment__card">
+        <div class="custom-radio">
+          <input type="radio" id="" name="card-data" value="" class="custom-radio__button">
+          <label for="" class="custom-radio__label"></label>
+        </div>
+        <img class="popup-payment__card-img">
+        <span class="popup-payment__card-number"></span>
+      </div>
+    </template>
 
     <!-- заготовка для карточки товара -->
     <template id="item-template">
@@ -313,19 +375,6 @@
 
       </li>
     </template>
-
-    <dialog class="popup-payment">
-      <form>
-        <div>
-          <h4>Способ оплаты</h4>
-          <button></button>
-        </div>
-        <fieldset>
-          <input type="radio">
-        </fieldset>
-      </form>
-    </dialog>
-
   </div>
 
   <script defer type="module" src="./index.js"></script>

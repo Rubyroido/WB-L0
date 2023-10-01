@@ -1,0 +1,17 @@
+.popup-payment {
+  margin: auto;
+  padding: 0;
+  z-index: 11;
+  max-width: 400px;
+  width: 100vw;
+  border: none;
+  padding: 16px 24px 24px;
+  border-radius: 16px;
+  box-sizing: border-box;
+}
+
+.popup-payment::backdrop {
+  background-color: #05000A4D;
+  z-index: 5;
+}
+

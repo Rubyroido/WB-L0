@@ -139,3 +139,33 @@
 @import url(./blocks/footer/__copyright/footer__copyright.css);
 
 @import url(./blocks/custom-checkbox/custom-checkbox.css);
+@import url(./blocks/custom-radio/custom-radio.css);
+
+@import url(./blocks/popup/popup.css);
+@import url(./blocks/popup/_active/popup_active.css);
+
+@import url(./blocks/popup-payment/popup-payment.css);
+@import url(./blocks/popup-payment/__form/popup-payment__form.css);
+@import url(./blocks/popup-payment/__header/popup-payment__header.css);
+@import url(./blocks/popup-payment/__name/popup-payment__name.css);
+@import url(./blocks/popup-payment/__close/popup-payment__close.css);
+@import url(./blocks/popup-payment/__cards/popup-payment__cards.css);
+@import url(./blocks/popup-payment/__card/popup-payment__card.css);
+@import url(./blocks/popup-payment/__card-img/popup-payment__card-img.css);
+@import url(./blocks/popup-payment/__card-number/popup-payment__card-number.css);
+@import url(./blocks/popup-payment/__submit/popup-payment__submit.css);
+
+@import url(./blocks/popup-delivery/popup-delivery.css);
+@import url(./blocks/popup-delivery/__form/popup-delivery__form.css);
+@import url(./blocks/popup-delivery/__header/popup-delivery__header.css);
+@import url(./blocks/popup-delivery/__name/popup-delivery__name.css);
+@import url(./blocks/popup-delivery/__close/popup-delivery__close.css);
+@import url(./blocks/popup-delivery/__type/popup-delivery__type.css);
+@import url(./blocks/popup-delivery/__claim/popup-delivery__claim.css);
+@import url(./blocks/popup-delivery/__courier/popup-delivery__courier.css);
+@import url(./blocks/popup-delivery/__options/popup-delivery__options.css);
+@import url(./blocks/popup-delivery/__option/popup-delivery__option.css);
+@import url(./blocks/popup-delivery/__adress-wrap/popup-delivery__adress-wrap.css);
+@import url(./blocks/popup-delivery/__adress/popup-delivery__adress.css);
+@import url(./blocks/popup-delivery/__delete/popup-delivery__delete.css);
+@import url(./blocks/popup-delivery/__submit/popup-delivery__submit.css);

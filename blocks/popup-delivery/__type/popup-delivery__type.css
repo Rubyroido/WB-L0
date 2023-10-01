@@ -1,0 +1,8 @@
+.popup-delivery__type {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 13px 0 0;
+}

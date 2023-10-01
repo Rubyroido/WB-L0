@@ -1,0 +1,16 @@
+.popup-delivery__delete {
+  width: 20px;
+  height: 20px;
+  background-image: url(../../../images/delete-button.svg);
+  border: none;
+  background-position: center;
+  background-color: var(--color-white);
+  margin: 4px 0 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.popup-delivery__delete:hover {
+  background-image: url(../../../images/delete-button-hover.svg);
+  cursor: pointer;
+}
