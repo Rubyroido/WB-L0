@@ -218,8 +218,8 @@
               </div>
               <div class="basket__form-withdrawal">
                 <div class="custom-checkbox basket__form-withdrawal-container">
-                  <input type="checkbox" id="toggle" class="custom-checkbox__button basket__form-withdrawal-checkbox ">
-                  <label for="toggle" class="custom-checkbox__label"></label>
+                  <input type="checkbox" id="toggle-sidebar" class="custom-checkbox__button basket__form-withdrawal-checkbox ">
+                  <label for="toggle-sidebar" class="custom-checkbox__label"></label>
                   <span class="basket__form-withdrawal-text">Списать оплату сразу</span>
                 </div>
                 <span class="basket__form-withdrawal-hint">Спишем оплату с карты при получении</span>
@@ -313,6 +313,19 @@
 
       </li>
     </template>
+
+    <dialog class="popup-payment">
+      <form>
+        <div>
+          <h4>Способ оплаты</h4>
+          <button></button>
+        </div>
+        <fieldset>
+          <input type="radio">
+        </fieldset>
+      </form>
+    </dialog>
+
   </div>
 
   <script defer type="module" src="./index.js"></script>

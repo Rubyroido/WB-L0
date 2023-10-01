@@ -15,6 +15,8 @@
   border: solid 1px #00000033;
   border-radius: 6px;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .custom-checkbox__label:hover {
@@ -37,10 +39,9 @@
   left: 0;
   opacity: 0;
   transition: all 0.3s;
-}
-
-.custom-checkbox__button:checked+.custom-checkbox__label {
-  border: solid 1px var(--color-pink);
+  border: 1px solid var(--color-pink);
+  padding: 0;
+  margin: 0;
 }
 
 .custom-checkbox__button:checked+.custom-checkbox__label::after {

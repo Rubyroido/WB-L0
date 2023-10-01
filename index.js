@@ -5,6 +5,7 @@ const accordionBodyUnavailable = document.querySelector('.accordion__body-unavai
 const cardTemplate = document.querySelector('#item-template');
 const unavailableTemplate = document.querySelector('#unavailable-template');
 
+
 window.addEventListener('click', (event) => {
   if (event.target.className !== 'accordion__header') {
     return
@@ -20,6 +21,10 @@ window.addEventListener('click', (event) => {
 
 function createCard(item) {
   const card = cardTemplate.content.querySelector('.accordion__item').cloneNode(true);
+
+  card.querySelector('.custom-checkbox__button').id = `toggle${item.index}`;
+  card.querySelector('.custom-checkbox__label').htmlFor = `toggle${item.index}`;
+
   const cardImage = card.querySelector('.accordion__item-img');
   cardImage.src = item.image;
   cardImage.alt = item.name;
@@ -80,3 +85,19 @@ const unavailableCards = initialCards.map((item) => {
 
 accordionBody.append(...cards);
 accordionBodyUnavailable.append(...unavailableCards);
+
+const commonCheckbox = document.querySelector('.accordion__checkbox');
+const commonCheckboxButton = commonCheckbox.querySelector('.custom-checkbox__button');
+const basketCheckboxes = Array.from(accordionBody.querySelectorAll('.custom-checkbox__button'));
+
+commonCheckboxButton.addEventListener('change', (event) => {
+  if(event.target.checked) {
+    basketCheckboxes.forEach((checkbox)=> {
+      checkbox.checked = true;
+    })
+  } else {
+    basketCheckboxes.forEach((checkbox)=> {
+      checkbox.checked = false;
+    })
+  }
+})
