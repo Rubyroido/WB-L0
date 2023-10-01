@@ -1,7 +1,6 @@
-.custom-radio {
-  margin-top: 8px;
+.custom-radio_delivery {
   max-height: 16px;
-  /* align-self: center; */
+  margin-top: 8px;
 }
 
 .custom-radio__button {

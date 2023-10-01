@@ -193,7 +193,7 @@
             <li class="basket__form-preference">
               <div class="basket__form-preference-header">
                 <h3 class="basket__form-preference-name">Доставка в пункт выдачи</h3>
-                <button class="basket__form-edit"></button>
+                <button type="button" class="basket__form-edit basket__delivery-edit"></button>
               </div>
               <p class="basket__form-adress">Бишкек, улица Ахматбека Суюмбаева, 12/1</p>
               <span class="basket__form-date">5-8 фев</span>
@@ -210,7 +210,7 @@
             <li class="basket__form-preference">
               <div class="basket__form-preference-header">
                 <h3 class="basket__form-preference-name">Оплата картой</h3>
-                <button class="basket__form-edit"></button>
+                <button type="button" class="basket__form-edit basket__payment-edit"></button>
               </div>
               <div class="basket__form-card">
                 <img src="./images/mir.svg" alt="логотип" class="basket__form-card-logo">
@@ -280,8 +280,8 @@
     <template id="delivery-template">
       <div class="popup-delivery__option">
         <div class="popup-delivery__adress-wrap">
-          <div class="custom-radio">
-            <input type="radio" id="" name="card-data" value="" class="custom-radio__button">
+          <div class="custom-radio custom-radio_delivery">
+            <input type="radio" id="" name="input-data" value="" class="custom-radio__button">
             <label for="" class="custom-radio__label"></label>
           </div>
           <span class="popup-delivery__adress"></span>
@@ -294,7 +294,7 @@
     <template id="card-template">
       <div class="popup-payment__card">
         <div class="custom-radio">
-          <input type="radio" id="" name="card-data" value="" class="custom-radio__button">
+          <input type="radio" id="" name="input-data" value="" class="custom-radio__button">
           <label for="" class="custom-radio__label"></label>
         </div>
         <img class="popup-payment__card-img">
@@ -355,7 +355,7 @@
     <!-- Заготовка для недоступных товаров -->
     <template id="unavailable-template">
       <li class="accordion__item accordion__item-unavailable">
-        <img src="" alt="" class="accordion__item-img">
+        <img src="" alt="" class="accordion__item-img accordion__item-img_unavailable">
         <!-- <span class="accordion__item-size-mob"></span> -->
 
         <div class="accordion__item-description">

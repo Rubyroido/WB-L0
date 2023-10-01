@@ -71,6 +71,7 @@
 @import url(./blocks/accordion/__item/accordion__item.css);
 @import url(./blocks/accordion/__checkbox-container/accordion__checkbox-container.css);
 @import url(./blocks/accordion/__item-unavailable/accordion__item-unavailable.css);
+@import url(./blocks/accordion/__item-img/_unavailable/accordion__item-img_unavailable.css);
 @import url(./blocks/accordion/__item-info/accordion__item-info.css);
 @import url(./blocks/accordion/__item-description/accordion__item-description.css);
 @import url(./blocks/accordion/__item-name/accordion__item-name.css);

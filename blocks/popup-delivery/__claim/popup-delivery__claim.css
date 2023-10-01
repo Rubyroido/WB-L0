@@ -10,3 +10,7 @@
   padding: 0 0 2px;
   box-sizing: border-box;
 }
+
+.popup-delivery__claim:hover {
+  cursor: pointer;
+}

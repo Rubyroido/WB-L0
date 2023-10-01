@@ -137,9 +137,12 @@ const createdAdresses = adresses.map((adress) => {
 
 deliveryOptionsPopup.append(...createdAdresses);
 
+// обработка открытия и закрытия попапов
 const popup = document.querySelector('.popup');
 const paymentButtonChange = document.querySelector('.payment__header-button');
 const deliveryButtonChange = document.querySelector('.delivery__header-button');
+const basketDeliveryButtonChange = document.querySelector('.basket__delivery-edit');
+const basketPaymentButtonChange = document.querySelector('.basket__payment-edit');
 const paymentPopup = document.querySelector('.popup-payment');
 const deliveryPopup = document.querySelector('.popup-delivery');
 const paymentButtonClose = paymentPopup.querySelector('.popup-payment__close');
@@ -147,7 +150,6 @@ const paymentButtonSubmit = paymentPopup.querySelector('.popup-payment__submit')
 const deliveryButtonClose = deliveryPopup.querySelector('.popup-delivery__close');
 const deliveryButtonSubmit = deliveryPopup.querySelector('.popup-delivery__submit');
 
-// обработка открытия и закрытия попапов
 function closeOnOverlay(event) {
   if (event.target.classList.contains('popup-payment') || event.target.classList.contains('popup-delivery')) {
     togglePopup();
@@ -165,6 +167,11 @@ function togglePopup() {
   }
 }
 
+// слушатели для попапа оплпаты
+basketPaymentButtonChange.addEventListener('click', () => {
+  togglePopup();
+  paymentPopup.showModal();
+})
 paymentButtonChange.addEventListener('click', () => {
   togglePopup();
   paymentPopup.showModal();
@@ -177,6 +184,11 @@ paymentButtonSubmit.addEventListener('click', () => {
   togglePopup();
 })
 
+// слушатели для попапа доставки
+basketDeliveryButtonChange.addEventListener('click', () => {
+  togglePopup();
+  deliveryPopup.showModal();
+})
 deliveryButtonChange.addEventListener('click', () => {
   togglePopup();
   deliveryPopup.showModal();
@@ -188,6 +200,36 @@ deliveryButtonClose.addEventListener('click', () => {
 deliveryButtonSubmit.addEventListener('click', () => {
   togglePopup();
 })
+
+//обработка сабимтов форм
+const paymentForm = document.querySelector('.popup-payment__form');
+const deliveryForm = document.querySelector('.popup-delivery__form');
+
+deliveryForm.addEventListener('submit', () => {
+  const adressValue = document.querySelector('input[name="input-data"]:checked').value;
+  const adressData = adresses.find((adress) => {
+    return adress.index === Number(adressValue);
+  })
+
+  document.querySelector('.delivery__adress-text').textContent = adressData.adress;
+
+  document.querySelector('.basket__form-adress').textContent = adressData.adress;
+})
+
+paymentForm.addEventListener('submit', () => {
+  const cardValue = paymentForm.querySelector('input[name="input-data"]:checked').value;
+  const cardData = paymentCards.find((card) => {
+    return card.type === cardValue;
+  })
+  document.querySelector('.basket__form-card-logo').src = cardData.img;
+  document.querySelector('.basket__form-card-logo').alt = cardData.type;
+  document.querySelector('.basket__form-card-number').textContent = cardData.number;
+
+  document.querySelector('.payment__card-logo').src = cardData.img;
+  document.querySelector('.payment__card-logo').alt = cardData.type;
+  document.querySelector('.payment__card-number').textContent = cardData.number;
+})
+
 // Обработка общего чекбокса
 const commonCheckbox = document.querySelector('.accordion__checkbox');
 const commonCheckboxButton = commonCheckbox.querySelector('.custom-checkbox__button');
