@@ -132,6 +132,7 @@
 @import url(./blocks/user-data/__contacts/user-data__contacts.css);
 @import url(./blocks/user-data/__input-container/user-data__input-container.css);
 @import url(./blocks/user-data/__input/user-data__input.css);
+@import url(./blocks/user-data/__input/_invalid/user-data__input_invalid.css);
 @import url(./blocks/user-data/__placeholder/user-data__placeholder.css);
 @import url(./blocks/user-data/__error/user-data__error.css);
 @import url(./blocks/user-data/__input-hint/user-data__input-hint.css);

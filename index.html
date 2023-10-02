@@ -35,7 +35,7 @@
     </header>
 
     <main class="main">
-      <form class="basket">
+      <section class="basket">
         <!-- корзина -->
         <section class="basket__form-content">
           <h2 class="basket__header">Корзина</h2>
@@ -131,7 +131,7 @@
             <p class="payment__hint">Спишем оплату с карты при получении</p>
           </div>
 
-          <div class="user-data">
+          <form class="user-data" id="main-form" novalidate>
             <h3 class="user-data__header">Получатель</h3>
             <fieldset class="user-data__inputs">
               <div class="user-data__person">
@@ -153,19 +153,20 @@
                   <span class="user-data__error"></span>
                 </div>
                 <div class="user-data__input-container">
-                  <input type="number" name="phone" id="" class="user-data__input" placeholder=" " required>
+                  <input type="text" name="phone" id="" class="user-data__input" placeholder=" " required maxlength="14">
                   <label class="user-data__placeholder">Телефон</label>
                   <span class="user-data__error"></span>
                 </div>
                 <div class="user-data__input-container">
-                  <input type="number" name="itn" id="" class="user-data__input" placeholder=" " required>
+                  <input type="number" name="itn" id="" class="user-data__input" placeholder=" " required minlength="14" maxlength="14">
                   <label class="user-data__placeholder">ИНН</label>
                   <span class="user-data__error"></span>
                   <span class="user-data__input-hint">Для таможенного оформления</span>
                 </div>
               </div>
             </fieldset>
-          </div>
+
+          </form>
         </section>
 
         <!-- сайдбар -->
@@ -228,13 +229,13 @@
             </li>
           </ul>
 
-          <button type="submit" class="basket__form-submit">Заказать</button>
+          <button type="submit" class="basket__form-submit" form="main-form">Заказать</button>
           <div class="basket__form-rules">
             <span class="basket__form-rules-img"></span>
             <p class="basket__form-rules-approval">Соглашаюсь с правилами пользования торговой площадкой и возврата</p>
           </div>
         </section>
-      </form>
+      </section>
     </main>
 
     <footer class="footer">
@@ -381,6 +382,7 @@
     </template>
   </div>
 
+  <script src="./validation.js"></script>
   <script defer type="module" src="./index.js"></script>
 </body>
 

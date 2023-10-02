@@ -1,0 +1,4 @@
+.user-data__input_invalid {
+  border-bottom: solid 1px var(--color-orange);
+  color: var(--color-orange);
+}

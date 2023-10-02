@@ -364,7 +364,12 @@ goods.forEach((item) => {
       updateTotal()
     }
   })
-
 })
 
 
+let pattern = /(\+7|8)[\s(]?(\d{3})[\s)]?(\d{3})[\s-]?(\d{2})[\s-]?(\d{2})/g;
+const phoneInput = document.querySelector('input[name="phone"]');
+phoneInput.addEventListener('change',(event) => {
+  event.preventDefault()
+  phoneInput.value = phoneInput.value.replace(pattern, '+7 ($2) $3-$4-$5');
+})
