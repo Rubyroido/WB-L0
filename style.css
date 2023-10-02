@@ -54,6 +54,7 @@
 @import url(./blocks/basket/__form-withdrawal-checkbox/basket__form-withdrawal-checkbox.css);
 @import url(./blocks/basket/__form-withdrawal-text/basket__form-withdrawal-text.css);
 @import url(./blocks/basket/__form-withdrawal-hint/basket__form-withdrawal-hint.css);
+@import url(./blocks/basket/__form-withdrawal-hint/__hidden/basket__form-withdrawal-hint_hidden.css);
 @import url(./blocks/basket/__form-submit/basket__form-submit.css);
 @import url(./blocks/basket/__form-rules/basket__form-rules.css);
 @import url(./blocks/basket/__form-rules-img/basket__form-rules-img.css);

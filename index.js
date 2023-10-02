@@ -268,11 +268,35 @@ let totalSumCounter = 0;
 let totalQuantityCounter = 0;
 let totalDiscountCounter = 0;
 
+// изменение кнопки сабмита
+const sidebarWithdrawal = document.querySelector('.basket__form-withdrawal');
+const sidebarCheckbox = sidebarWithdrawal.querySelector('.basket__form-withdrawal-checkbox');
+const sidebarCheckboxHint = sidebarWithdrawal.querySelector('.basket__form-withdrawal-hint');
+const sidebarSubmit = document.querySelector('.basket__form-submit');
+
+sidebarCheckbox.addEventListener('change', () => {
+  if (sidebarCheckbox.checked) {
+    sidebarCheckboxHint.classList.toggle('basket__form-withdrawal-hint_hidden');
+    sidebarSubmit.textContent = `Оплатить ${totalSumDiscounted.textContent}`;
+  } else {
+    sidebarCheckboxHint.classList.toggle('basket__form-withdrawal-hint_hidden');
+    sidebarSubmit.textContent = 'Заказать';
+  }
+})
+
 function updateTotal() {
-  totalSum.textContent = totalSumCounter;
+  totalSum.textContent = `${totalSumCounter} сом`;
   totalQuantity.textContent = `${totalQuantityCounter} товаров`;
-  totalDiscount.textContent = totalDiscountCounter;
-  totalSumDiscounted.textContent = totalSumCounter - totalDiscountCounter;
+  totalDiscount.textContent = `${totalDiscountCounter} сом`;
+  totalSumDiscounted.textContent = `${totalSumCounter - totalDiscountCounter} сом`;
+
+  if (sidebarCheckbox.checked === true) {
+    sidebarCheckboxHint.classList.add('basket__form-withdrawal-hint_hidden');
+    sidebarSubmit.textContent = `Оплатить ${totalSumDiscounted.textContent}`;
+  } else {
+    sidebarCheckboxHint.classList.remove('basket__form-withdrawal-hint_hidden');
+    sidebarSubmit.textContent = 'Заказать';
+  }
 }
 updateTotal();
 
@@ -366,10 +390,12 @@ goods.forEach((item) => {
   })
 })
 
-
+// Преобразование инпута номера телефона
 let pattern = /(\+7|8)[\s(]?(\d{3})[\s)]?(\d{3})[\s-]?(\d{2})[\s-]?(\d{2})/g;
 const phoneInput = document.querySelector('input[name="phone"]');
-phoneInput.addEventListener('change',(event) => {
+phoneInput.addEventListener('change', (event) => {
   event.preventDefault()
   phoneInput.value = phoneInput.value.replace(pattern, '+7 ($2) $3-$4-$5');
 })
+
+
