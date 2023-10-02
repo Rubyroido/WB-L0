@@ -173,15 +173,15 @@
           <ul class="basket__form-description">
             <li class="basket__form-line basket__form-total">
               <h3>Итого</h3>
-              <h3>100000</h3>
+              <h3 class="basket__form-total-cost"></h3>
             </li>
-            <li class="basket__form-line basket__form-goods">
-              <span>100 товаров</span>
-              <span>110000</span>
+            <li class="basket__form-line">
+              <span class="basket__form-goods"></span>
+              <span class="basket__form-discounted"></span>
             </li>
-            <li class="basket__form-line basket__form-discount">
+            <li class="basket__form-line">
               <span>Скидка</span>
-              <span>-10000</span>
+              <span class="basket__form-discount"></span>
             </li>
             <li class="basket__form-line basket__form-delivery">
               <span>Доставка</span>
@@ -332,9 +332,10 @@
 
         <div class="accordion__item-interaction">
           <div class="accordion__item-counter">
-            <button class="accordion__item-decrease">-</button>
-            <span class="accordion__item-value"></span>
-            <button class="accordion__item-increase">+</button>
+            <button type="button" class="accordion__item-decrease">-</button>
+            <input class="accordion__item-value" disabled>
+            <input type="hidden" value="" class="max-value">
+            <button type="button" class="accordion__item-increase">+</button>
           </div>
           <span class="accordion__item-stock"></span>
           <div class="accordion__item-buttons">
@@ -344,6 +345,9 @@
         </div>
 
         <div class="accordion__item-total">
+          <input type="hidden" class="accordion__item-price">
+          <input type="hidden" class="accordion__item-discounted">
+
           <span class="accordion__item-cost"></span>
           <s>
             <span class="accordion__item-discount"></span>

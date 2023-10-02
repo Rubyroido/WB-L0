@@ -1,0 +1,7 @@
+.accordion__item-value {
+  background-color: var(--color-white);
+  border: none;
+  width: 44px;
+  text-align: center;
+  padding: 0;
+}

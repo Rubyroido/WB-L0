@@ -49,8 +49,12 @@ function createCard(item) {
   card.querySelector('.accordion__item-storage').textContent = item.storage;
   card.querySelector('.accordion__item-seller').textContent = item.seller;
 
-  const cardValue = card.querySelector('.accordion__item-value');
-  cardValue.textContent = item.value;
+  let cardValue = card.querySelector('.accordion__item-value');
+  cardValue.value = item.value;
+  card.querySelector('.max-value').value = item.stock;
+
+  card.querySelector('.accordion__item-price').value = item.price;
+  card.querySelector('.accordion__item-discounted').value = item.discount;
 
   if (item.stock <= 5) {
     card.querySelector('.accordion__item-stock').textContent = `Осталось ${item.stock} шт`;
@@ -239,12 +243,128 @@ commonCheckboxButton.addEventListener('change', (event) => {
   if (event.target.checked) {
     basketCheckboxes.forEach((checkbox) => {
       checkbox.checked = true;
+
+      const changeEvent = new Event('change', { bubbles: true });
+      checkbox.dispatchEvent(changeEvent);
     })
   } else {
     basketCheckboxes.forEach((checkbox) => {
       checkbox.checked = false;
+
+      const changeEvent = new Event('change', { bubbles: true });
+      checkbox.dispatchEvent(changeEvent);
     })
   }
+})
+
+//каунтеры и стоимость товаров
+const basket = document.querySelector('.basket__items-list');
+const totalSumDiscounted = document.querySelector('.basket__form-total-cost');
+const totalQuantity = document.querySelector('.basket__form-goods');
+const totalSum = document.querySelector('.basket__form-discounted');
+const totalDiscount = document.querySelector('.basket__form-discount');
+const goods = Array.from(basket.querySelectorAll('.accordion__item'));
+let totalSumCounter = 0;
+let totalQuantityCounter = 0;
+let totalDiscountCounter = 0;
+
+function updateTotal() {
+  totalSum.textContent = totalSumCounter;
+  totalQuantity.textContent = `${totalQuantityCounter} товаров`;
+  totalDiscount.textContent = totalDiscountCounter;
+  totalSumDiscounted.textContent = totalSumCounter - totalDiscountCounter;
+}
+updateTotal();
+
+goods.forEach((item) => {
+  const price = item.querySelector('.accordion__item-price').value;
+  const discount = item.querySelector('.accordion__item-discounted').value;
+  const currentValue = item.querySelector('.accordion__item-value');
+  const totalCost = item.querySelector('.accordion__item-discount');
+  const totalDiscountedCost = item.querySelector('.accordion__item-cost');
+  const checkbox = item.querySelector('.custom-checkbox__button');
+
+  checkbox.addEventListener('change', () => {
+    const isChecked = checkbox.checked;
+    const itemQuantity = Number(currentValue.value);
+    const itemPrice = Number(price);
+    const itemDiscount = discount;
+
+    if (isChecked) {
+      totalSumCounter += itemQuantity * itemPrice;
+      totalQuantityCounter += itemQuantity;
+      totalDiscountCounter += itemQuantity * itemPrice * itemDiscount;
+    } else {
+      totalSumCounter -= itemQuantity * itemPrice;
+      totalQuantityCounter -= itemQuantity;
+      totalDiscountCounter -= itemQuantity * itemPrice * itemDiscount;
+    }
+
+    updateTotal();
+  });
+
+  const plusButtons = item.querySelector('.accordion__item-increase');
+  plusButtons.addEventListener('click', () => {
+    const maxValue = Number(item.querySelector('.max-value').value);
+    let counter = Number(currentValue.value);
+    counter++;
+
+    if (counter > maxValue - 1) {
+      plusButtons.disabled = true;
+    }
+
+    if (counter !== 0) {
+      minusButton.disabled = false;
+    }
+
+    currentValue.value = counter;
+
+    let cost = counter * Number(price);
+    let discountedCost = cost - (cost * Number(discount));
+
+    totalCost.textContent = `${cost} сом`;
+    totalDiscountedCost.textContent = `${discountedCost} сом`;
+
+    if (checkbox.checked) {
+      totalSumCounter += Number(price);
+      totalQuantityCounter++;
+      totalDiscountCounter += Number(price) * discount;
+
+      updateTotal()
+    }
+  })
+
+  const minusButton = item.querySelector('.accordion__item-decrease');
+  minusButton.addEventListener('click', () => {
+    const maxValue = Number(item.querySelector('.max-value').value);
+    let counter = Number(currentValue.value);
+    counter--;
+
+    if (counter < maxValue) {
+      plusButtons.disabled = false;
+    }
+
+    if (counter === 0) {
+      minusButton.disabled = true;
+    }
+
+    currentValue.value = counter;
+
+    let cost = counter * Number(price);
+    let discountedCost = cost - (cost * Number(discount));
+
+    totalCost.textContent = `${cost} сом`;
+    totalDiscountedCost.textContent = `${discountedCost} сом`;
+
+    if (checkbox.checked) {
+      totalSumCounter -= Number(price);
+      totalQuantityCounter--;
+      totalDiscountCounter -= Number(price) * discount;
+
+      updateTotal()
+    }
+  })
+
 })
 
 
