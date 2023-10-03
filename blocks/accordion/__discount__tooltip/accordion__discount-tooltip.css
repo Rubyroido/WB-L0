@@ -1,5 +1,5 @@
 .accordion__discount-tooltip {
-  display: flex;
+  display: none;
   flex-direction: row;
   justify-content: space-between;
   width: 239px;
