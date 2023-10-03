@@ -8,4 +8,11 @@
   flex-direction: row;
   align-items: center;
   gap: 8px;
+  width: 100%;
+}
+
+@media screen and (max-width: 680px) {
+  .basket__form-refusal {
+    background-color: var(--color-smoke);
+  }
 }

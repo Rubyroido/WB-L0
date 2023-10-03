@@ -14,3 +14,13 @@
   border: 1px solid rgba(var(--color-transparent),1);
   cursor: pointer;
 }
+
+@media screen and (max-width: 680px) {
+  .header__button-menu {
+    width: 28px;
+    height: 28px;
+    border: none;
+    border-radius: 0;
+
+  }
+}

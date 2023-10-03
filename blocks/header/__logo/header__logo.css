@@ -8,6 +8,13 @@
   letter-spacing: 0.02em;
   color: var(--color-white);
   text-align: start;
+  align-self: center;
   margin: 0;
   padding: 0;
+}
+
+@media screen and (max-width: 680px) {
+  .header__logo {
+    display: none;
+  }
 }

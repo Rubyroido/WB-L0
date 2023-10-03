@@ -1,0 +1,12 @@
+.header__button-search-mob {
+  width: 28px;
+  height: 28px;
+  background-image: url(../../../images/search-button-mobile.svg);
+  display: none;
+}
+
+@media screen and (max-width: 680px) {
+  .header__button-search-mob {
+    display: block;
+  }
+}

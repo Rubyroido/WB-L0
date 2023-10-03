@@ -1,0 +1,23 @@
+.accordion__item-size-mob {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  position: absolute;
+  bottom: 4px;
+  left: 4px;
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  background-color: var(--color-white);
+  opacity: 0;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 680px) {
+  .accordion__item-size-mob {
+    opacity: 1;
+  }
+}

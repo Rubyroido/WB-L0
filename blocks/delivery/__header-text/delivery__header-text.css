@@ -5,3 +5,10 @@
   letter-spacing: -0.01em;
   margin: 0;
 }
+
+@media screen and (max-width: 680px) {
+  .delivery__header-text {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}

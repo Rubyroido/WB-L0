@@ -10,3 +10,9 @@
   padding: 0 20px;
   border-radius: 36px;
 }
+
+@media screen and (max-width: 680px) {
+  .header__search-form {
+    display: none;
+  }
+}

@@ -2,9 +2,21 @@
   max-width: 1400px;
   width: 100%;
   margin: 16px auto;
-  padding: 0 22px 0;
+  padding: 0 22px;
   display: flex;
   gap: 32px;
   justify-content: space-between;
+  align-items: center;
   box-sizing: border-box;
+}
+
+@media screen and (max-width: 680px) {
+  .header {
+    margin: 14px auto;
+    padding: 0 13px;
+    display: flex;
+    gap: 16px;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
 }

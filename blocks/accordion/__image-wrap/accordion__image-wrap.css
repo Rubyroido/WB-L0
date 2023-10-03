@@ -1,0 +1,15 @@
+.accordion__image-wrap {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  max-height: 96px;
+  position: relative;
+}
+
+@media screen and (max-width: 680px) {
+  .accordion__image-wrap {
+    gap: 0;
+    grid-area: image;
+    max-height: 106px;
+  }
+}

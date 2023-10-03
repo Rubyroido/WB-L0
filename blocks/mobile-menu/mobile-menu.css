@@ -1,0 +1,17 @@
+.mobile-menu {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-white);
+  box-shadow: 0px -0.5px 0px 0px #0000004D;
+  display: none;
+}
+
+@media screen and (max-width: 680px) {
+  .mobile-menu {
+    display: block;
+  }
+}

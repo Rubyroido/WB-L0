@@ -7,3 +7,17 @@
   box-sizing: border-box;
   justify-content: space-between;
 }
+
+@media screen and (max-width: 1020px) {
+  .basket {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .basket {
+    padding: 16px 0 24px;
+    gap: 16px;
+  }
+}

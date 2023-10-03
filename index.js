@@ -45,6 +45,9 @@ function createCard(item) {
   }
   if (item.size !== null) {
     card.querySelector('.accordion__item-size').textContent = `Размер: ${item.size}`;
+    card.querySelector('.accordion__item-size-mob').textContent = item.size;
+  } else {
+    card.querySelector('.accordion__item-size-mob').classList.add('accordion__item-size-mob_inactive');
   }
   card.querySelector('.accordion__item-storage').textContent = item.storage;
   card.querySelector('.accordion__item-seller').textContent = item.seller;
@@ -91,6 +94,9 @@ function createUnavailableCard(item) {
   }
   if (item.size !== null) {
     card.querySelector('.accordion__item-size').textContent = `Размер: ${item.size}`;
+    card.querySelector('.accordion__item-size-mob').textContent = item.size;
+  } else {
+    card.querySelector('.accordion__item-size-mob').classList.add('accordion__item-size-mob_inactive');
   }
 
   return card;

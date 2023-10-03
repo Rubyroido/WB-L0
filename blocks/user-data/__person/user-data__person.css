@@ -3,3 +3,10 @@
   flex-direction: row;
   gap: 24px;
 }
+
+@media screen and (max-width: 680px) {
+  .user-data__person {
+    flex-direction: column;
+    gap: 16px;
+  }
+}

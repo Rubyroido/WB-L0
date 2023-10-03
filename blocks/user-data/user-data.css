@@ -6,4 +6,13 @@
   gap: 16px;
   background-color: var(--color-white);
   border-radius: 16px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 680px) {
+  .user-data {
+    /* max-width: 680px;
+    width: 100%; */
+    padding: 16px 16px 24px;
+  }
 }

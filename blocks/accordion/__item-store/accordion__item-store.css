@@ -7,3 +7,10 @@
   flex-direction: column;
   gap: 4px;
 }
+
+@media screen and (max-width: 680px) {
+  .accordion__item-store {
+    max-width: 192px;;
+    width: 100%;
+  }
+}

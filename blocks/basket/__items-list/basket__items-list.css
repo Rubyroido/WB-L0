@@ -1,3 +1,10 @@
 .basket__items-list {
   width: 100%;
 }
+
+@media screen and (max-width: 680px) {
+  .basket__items-list {
+    padding: 0 16px;
+    box-sizing: border-box;
+  }
+}

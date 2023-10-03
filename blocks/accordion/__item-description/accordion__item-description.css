@@ -5,3 +5,10 @@
   max-width: 275px;
   width: 100vw;
 }
+
+@media screen and (max-width: 680px) {
+  .accordion__item-description {
+    width: fit-content;
+    grid-area: text;
+  }
+}

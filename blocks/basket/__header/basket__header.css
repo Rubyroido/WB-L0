@@ -5,3 +5,11 @@
   letter-spacing: -0.01em;
   margin: 10px 0 27px;
 }
+
+@media screen and (max-width: 680px) {
+  .basket__header {
+    font-size: 20px;
+    line-height: 28px;
+    margin: 0 16px 16px;
+  }
+}

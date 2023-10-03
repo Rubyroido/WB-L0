@@ -1,0 +1,13 @@
+.accordion__item-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+@media screen and (max-width: 680px) {
+  .accordion__item-wrap {
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+  }
+}

@@ -12,6 +12,7 @@
 @import url(./blocks/header/__button-menu/header__button-menu.css);
 @import url(./blocks/header/__burger/header__burger.css);
 @import url(./blocks/header/__logo/header__logo.css);
+@import url(./blocks/header/__logo-mobile/header__logo-mobile.css);
 
 @import url(./blocks/header/__search-form/header__search-form.css);
 @import url(./blocks/header/__input/header__input.css);
@@ -23,6 +24,7 @@
 @import url(./blocks/header/__button-basket/header__button-basket.css);
 @import url(./blocks/header/__basket-logo/header__basket-logo.css);
 @import url(./blocks/header/__counter/header__counter.css);
+@import url(./blocks/header/__button-search-mob/header__button-search-mob.css);
 
 @import url(./blocks/main/main.css);
 @import url(./blocks/basket/basket.css);
@@ -30,6 +32,7 @@
 @import url(./blocks/basket/__form-content/basket__form-content.css);
 @import url(./blocks/basket/__header/basket__header.css);
 @import url(./blocks/basket/__items-list/basket__items-list.css);
+@import url(./blocks/basket/__items-unavalable/basket__items-unavailable.css);
 
 @import url(./blocks/basket/__form-sidebar/basket__form-sidebar.css);
 @import url(./blocks/basket/__form-description/basket__form-description.css);
@@ -63,6 +66,7 @@
 @import url(./blocks/accordion/accordion.css);
 @import url(./blocks/accordion/__header/accordion__header.css);
 @import url(./blocks/accordion/__header-text/accordion__header-text.css);
+@import url(./blocks/accordion/__image-wrap/accordion__image-wrap.css);
 @import url(./blocks/accordion/__checkbox/accordion__checkbox.css);
 @import url(./blocks/accordion/__icon/accordion__icon.css);
 @import url(./blocks/accordion/__icon/_active/accordion__icon_active.css);
@@ -70,10 +74,16 @@
 @import url(./blocks/accordion/__body/_inactive/accordion__body_inactive.css);
 @import url(./blocks/accordion/__body-unavailable/accordion__body-unavailable.css);
 @import url(./blocks/accordion/__item/accordion__item.css);
+@import url(./blocks/accordion/__item-wrap/accordion__item-wrap.css);
 @import url(./blocks/accordion/__checkbox-container/accordion__checkbox-container.css);
 @import url(./blocks/accordion/__item-unavailable/accordion__item-unavailable.css);
+@import url(./blocks/accordion/__item-img/accordion__item-img.css);
 @import url(./blocks/accordion/__item-img/_unavailable/accordion__item-img_unavailable.css);
 @import url(./blocks/accordion/__item-info/accordion__item-info.css);
+@import url(./blocks/accordion/__item-size/accordion__item-size.css);
+@import url(./blocks/accordion/__item-color/accordion__item-color.css);
+@import url(./blocks/accordion/__item-size-mob/accordion__item-size-mob.css);
+@import url(./blocks/accordion/__item-size-mob/_inactive/accordion__item-size-mob_inactive.css);
 @import url(./blocks/accordion/__item-description/accordion__item-description.css);
 @import url(./blocks/accordion/__item-name/accordion__item-name.css);
 @import url(./blocks/accordion/__item-store/accordion__item-store.css);
@@ -141,6 +151,16 @@
 @import url(./blocks/footer/footer.css);
 @import url(./blocks/footer/__copyright/footer__copyright.css);
 
+@import url(./blocks/mobile-menu/mobile-menu.css);
+@import url(./blocks/mobile-menu/__links/mobile-menu__links.css);
+@import url(./blocks/mobile-menu/__link/mobile-menu__link.css);
+@import url(./blocks/mobile-menu/__home/mobile-menu__home.css);
+@import url(./blocks/mobile-menu/__search/mobile-menu__search.css);
+@import url(./blocks/mobile-menu/__basket/mobile-menu__basket.css);
+@import url(./blocks/mobile-menu/__favorite/mobile-menu__favorite.css);
+@import url(./blocks/mobile-menu/__profile/mobile-menu__profile.css);
+@import url(./blocks/mobile-menu/__counter/mobile-menu__counter.css);
+
 @import url(./blocks/custom-checkbox/custom-checkbox.css);
 @import url(./blocks/custom-radio/custom-radio.css);
 
@@ -148,6 +168,7 @@
 @import url(./blocks/popup/_active/popup_active.css);
 
 @import url(./blocks/popup-payment/popup-payment.css);
+@import url(./blocks/popup-payment/__wrap/popup-payment__wrap.css);
 @import url(./blocks/popup-payment/__form/popup-payment__form.css);
 @import url(./blocks/popup-payment/__header/popup-payment__header.css);
 @import url(./blocks/popup-payment/__name/popup-payment__name.css);
@@ -159,6 +180,7 @@
 @import url(./blocks/popup-payment/__submit/popup-payment__submit.css);
 
 @import url(./blocks/popup-delivery/popup-delivery.css);
+@import url(./blocks/popup-delivery/__wrap/popup-delivery__wrap.css);
 @import url(./blocks/popup-delivery/__form/popup-delivery__form.css);
 @import url(./blocks/popup-delivery/__header/popup-delivery__header.css);
 @import url(./blocks/popup-delivery/__name/popup-delivery__name.css);

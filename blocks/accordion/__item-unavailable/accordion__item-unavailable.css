@@ -8,3 +8,16 @@
   padding-right: 126px;
   box-sizing: border-box;
 }
+
+@media screen and (max-width: 680px) {
+  .accordion__item-unavailable {
+    grid-template-columns: 0.2fr auto;
+    grid-template-rows: 0fr 2fr 0.3fr;
+
+    padding: 0;
+  }
+
+  .accordion__item-unavailable .accordion__item-interaction {
+    justify-content: flex-end;
+  }
+}

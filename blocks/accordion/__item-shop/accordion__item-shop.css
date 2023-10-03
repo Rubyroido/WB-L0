@@ -4,3 +4,9 @@
   gap: 6px;
   align-items: center;
 }
+
+@media screen and (max-width: 680px) {
+  .accordion__item-shop {
+    display: none;
+  }
+}

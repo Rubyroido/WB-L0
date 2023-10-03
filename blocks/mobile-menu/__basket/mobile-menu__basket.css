@@ -1,0 +1,4 @@
+.mobile-menu__basket {
+  background-image: url(../../../images/mobile-button-cart.svg);
+  position: relative;
+}

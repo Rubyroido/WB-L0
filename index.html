@@ -17,6 +17,8 @@
         </button>
         <h1 class="header__logo">ТОВАРЫ И ТОЧКА</h1>
       </div>
+      <h1 class="header__logo-mobile">ТОВАРЫ И ТОЧКА</h1>
+
       <form class="header__search-form">
         <input type="text" class="header__input" placeholder="Я ищу..." />
         <button type="submit" class="header__button-search"></button>
@@ -31,6 +33,7 @@
           Корзина
           <span class="header__counter">3</span>
         </a>
+        <a href="#" class="header__button-search-mob"></a>
       </div>
     </header>
 
@@ -153,12 +156,14 @@
                   <span class="user-data__error"></span>
                 </div>
                 <div class="user-data__input-container">
-                  <input type="text" name="phone" id="" class="user-data__input" placeholder=" " required maxlength="14">
+                  <input type="text" name="phone" id="" class="user-data__input" placeholder=" " required
+                    maxlength="14">
                   <label class="user-data__placeholder">Телефон</label>
                   <span class="user-data__error"></span>
                 </div>
                 <div class="user-data__input-container">
-                  <input type="number" name="itn" id="" class="user-data__input" placeholder=" " required minlength="14" maxlength="14">
+                  <input type="number" name="itn" id="" class="user-data__input" placeholder=" " required minlength="14"
+                    maxlength="14">
                   <label class="user-data__placeholder">ИНН</label>
                   <span class="user-data__error"></span>
                   <span class="user-data__input-hint">Для таможенного оформления</span>
@@ -191,15 +196,17 @@
           </ul>
 
           <ul class="basket__form-preferences">
-            <li class="basket__form-preference">
-              <div class="basket__form-preference-header">
-                <h3 class="basket__form-preference-name">Доставка в пункт выдачи</h3>
-                <button type="button" class="basket__form-edit basket__delivery-edit"></button>
+            <li>
+              <div class="basket__form-preference">
+                <div class="basket__form-preference-header">
+                  <h3 class="basket__form-preference-name">Доставка в пункт выдачи</h3>
+                  <button type="button" class="basket__form-edit basket__delivery-edit"></button>
+                </div>
+                <p class="basket__form-adress">Бишкек, улица Ахматбека Суюмбаева, 12/1</p>
+                <span class="basket__form-date">5-8 фев</span>
               </div>
-              <p class="basket__form-adress">Бишкек, улица Ахматбека Суюмбаева, 12/1</p>
-              <span class="basket__form-date">5-8 фев</span>
               <div class="basket__form-refusal">
-                <span class="basket__form-refusal-img"></span>
+                <div class="basket__form-refusal-img"></div>
                 <p class="basket__form-refusal-text">Обратная доставка товаров на склад при отказе —
                   <span data-title="Если товары вам не подойдут, мы вернем их обратно на склад — это бесплатно"
                     class="basket__form-refusal-hint">
@@ -208,14 +215,16 @@
                 </p>
               </div>
             </li>
-            <li class="basket__form-preference">
-              <div class="basket__form-preference-header">
-                <h3 class="basket__form-preference-name">Оплата картой</h3>
-                <button type="button" class="basket__form-edit basket__payment-edit"></button>
-              </div>
-              <div class="basket__form-card">
-                <img src="./images/mir.svg" alt="логотип" class="basket__form-card-logo">
-                <p class="basket__form-card-number">1234 12** **** 1234</p>
+            <li>
+              <div class="basket__form-preference">
+                <div class="basket__form-preference-header">
+                  <h3 class="basket__form-preference-name">Оплата картой</h3>
+                  <button type="button" class="basket__form-edit basket__payment-edit"></button>
+                </div>
+                <div class="basket__form-card">
+                  <img src="./images/mir.svg" alt="логотип" class="basket__form-card-logo">
+                  <p class="basket__form-card-number">1234 12** **** 1234</p>
+                </div>
               </div>
               <div class="basket__form-withdrawal">
                 <div class="custom-checkbox basket__form-withdrawal-container">
@@ -247,13 +256,15 @@
       <!-- форма выбора карты для полаты -->
       <dialog class="popup-payment">
         <form class="popup-payment__form" method="dialog">
-          <div class="popup-payment__header">
-            <h4 class="popup-payment__name">Способ оплаты</h4>
-            <button type="button" class="popup-payment__close"></button>
-          </div>
-          <fieldset class="popup-payment__cards">
+          <div class="popup-payment__wrap">
+            <div class="popup-payment__header">
+              <h4 class="popup-payment__name">Способ оплаты</h4>
+              <button type="button" class="popup-payment__close"></button>
+            </div>
+            <fieldset class="popup-payment__cards">
 
-          </fieldset>
+            </fieldset>
+          </div>
           <button type="submit" class="popup-payment__submit">Выбрать</button>
         </form>
       </dialog>
@@ -261,17 +272,19 @@
       <!-- форма выбора адреса доставки -->
       <dialog class="popup-delivery">
         <form class="popup-delivery__form" method="dialog">
-          <div class="popup-delivery__header">
-            <h4 class="popup-delivery__name">Способ доставки</h4>
-            <button type="button" class="popup-delivery__close"></button>
+          <div class="popup-delivery__wrap">
+            <div class="popup-delivery__header">
+              <h4 class="popup-delivery__name">Способ доставки</h4>
+              <button type="button" class="popup-delivery__close"></button>
+            </div>
+            <div class="popup-delivery__type">
+              <button type="button" class="popup-delivery__claim">В пункт выдачи</button>
+              <button type="button" class="popup-delivery__courier">Курьером</button>
+            </div>
+            <fieldset class="popup-delivery__options">
+              <legend>Мои адреса</legend>
+            </fieldset>
           </div>
-          <div class="popup-delivery__type">
-            <button type="button" class="popup-delivery__claim">В пункт выдачи</button>
-            <button type="button" class="popup-delivery__courier">Курьером</button>
-          </div>
-          <fieldset class="popup-delivery__options">
-            <legend>Мои адреса</legend>
-          </fieldset>
           <button type="submit" class="popup-delivery__submit">Выбрать</button>
         </form>
       </dialog>
@@ -306,15 +319,17 @@
     <!-- заготовка для карточки товара -->
     <template id="item-template">
       <li class="accordion__item">
-        <div class="accordion__checkbox-container">
-          <div class="custom-checkbox">
-            <input type="checkbox" id="toggle" class="custom-checkbox__button">
-            <label for="toggle" class="custom-checkbox__label"></label>
+        <div class="accordion__image-wrap">
+          <div class="accordion__checkbox-container">
+            <div class="custom-checkbox">
+              <input type="checkbox" id="toggle" class="custom-checkbox__button">
+              <label for="toggle" class="custom-checkbox__label"></label>
+            </div>
           </div>
-        </div>
 
-        <img src="" alt="" class="accordion__item-img">
-        <!-- <span class="accordion__item-size-mob"></span> -->
+          <img src="" alt="" class="accordion__item-img">
+          <span class="accordion__item-size-mob accordion__item-size-mob_inactive"></span>
+        </div>
 
         <div class="accordion__item-description">
           <p class="accordion__item-name"></p>
@@ -332,13 +347,16 @@
         </div>
 
         <div class="accordion__item-interaction">
-          <div class="accordion__item-counter">
-            <button type="button" class="accordion__item-decrease">-</button>
-            <input class="accordion__item-value" disabled>
-            <input type="hidden" value="" class="max-value">
-            <button type="button" class="accordion__item-increase">+</button>
+          <div class="accordion__item-wrap">
+            <div class="accordion__item-counter">
+              <button type="button" class="accordion__item-decrease">-</button>
+              <input class="accordion__item-value" disabled>
+              <input type="hidden" value="" class="max-value">
+              <button type="button" class="accordion__item-increase">+</button>
+            </div>
+            <span class="accordion__item-stock"></span>
+
           </div>
-          <span class="accordion__item-stock"></span>
           <div class="accordion__item-buttons">
             <button class="accordion__item-like"></button>
             <button class="accordion__item-delete"></button>
@@ -360,8 +378,10 @@
     <!-- Заготовка для недоступных товаров -->
     <template id="unavailable-template">
       <li class="accordion__item accordion__item-unavailable">
-        <img src="" alt="" class="accordion__item-img accordion__item-img_unavailable">
-        <!-- <span class="accordion__item-size-mob"></span> -->
+        <div class="accordion__image-wrap">
+          <img src="" alt="" class="accordion__item-img accordion__item-img_unavailable">
+          <span class="accordion__item-size-mob"></span>
+        </div>
 
         <div class="accordion__item-description">
           <p class="accordion__item-name"></p>
@@ -381,6 +401,20 @@
       </li>
     </template>
   </div>
+
+  <nav class="mobile-menu">
+    <ul class="mobile-menu__links">
+      <li><a class="mobile-menu__link mobile-menu__home" href="#"></a></li>
+      <li><a class="mobile-menu__link mobile-menu__search" href="#"></a></li>
+      <li>
+        <a class="mobile-menu__link mobile-menu__basket" href="#">
+          <span class="mobile-menu__counter">3</span>
+        </a>
+      </li>
+      <li><a class="mobile-menu__link mobile-menu__favorite" href="#"></a></li>
+      <li><a class="mobile-menu__link mobile-menu__profile" href="#"></a></li>
+    </ul>
+  </nav>
 
   <script src="./validation.js"></script>
   <script defer type="module" src="./index.js"></script>

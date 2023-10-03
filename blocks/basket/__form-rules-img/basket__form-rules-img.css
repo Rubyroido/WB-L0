@@ -1,8 +1,9 @@
 .basket__form-rules-img {
   display: block;
-  width: 15px;
+  width: 13px;
   height: 13px;
   background-image: url(../../../images/approve.svg);
   background-repeat: no-repeat;
   margin: 4px 0 0;
+  flex-shrink: 0;
 }

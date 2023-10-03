@@ -10,3 +10,12 @@
 .accordion__item-total > s {
   color: var(--color-gray);
 }
+
+@media screen and (max-width: 680px) {
+  .accordion__item-total {
+    grid-area: cost;
+    max-width: 192px;
+    flex-direction: row;
+    align-items: center;
+  }
+}

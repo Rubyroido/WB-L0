@@ -6,3 +6,10 @@
   flex-direction: column;
   gap: 24px;
 }
+
+@media screen and (max-width: 680px) {
+  .basket__form-preferences {
+    margin: 16px 0 24px;
+    gap: 6px;
+  }
+}

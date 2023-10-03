@@ -15,3 +15,9 @@
 .popup-delivery__submit:hover {
   cursor: pointer;
 }
+
+@media screen and (max-width: 680px) {
+  .popup-delivery__submit {
+    width: 100%;
+  }
+}

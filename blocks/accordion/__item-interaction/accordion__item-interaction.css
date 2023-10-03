@@ -3,3 +3,14 @@
   flex-direction: column;
   gap: 8px;
 }
+
+@media screen and (max-width: 680px) {
+  .accordion__item-interaction {
+    width: 100%;
+    grid-area: buttons;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+  }
+}

@@ -27,6 +27,7 @@
   line-height: 16px;
   box-shadow: 0px 2px 10px 0px #00000026;
   border-radius: 8px;
+  z-index: 10;
 }
 
 [data-title]:hover::after {

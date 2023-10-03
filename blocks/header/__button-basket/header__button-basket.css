@@ -3,3 +3,9 @@
   color: var(--color-white);
   position: relative;
 }
+
+@media screen and (max-width: 680px) {
+  .header__button-basket {
+    display: none;
+  }
+}

@@ -7,3 +7,12 @@
   column-gap: 32px;
   row-gap: 16px;
 }
+
+@media screen and (max-width: 680px) {
+  .delivery__info {
+    margin-top: 8px;
+    grid-template-columns: auto;
+    row-gap: 0;
+
+  }
+}

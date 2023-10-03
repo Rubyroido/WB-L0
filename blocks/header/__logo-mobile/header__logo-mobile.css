@@ -1,0 +1,17 @@
+.header__logo-mobile {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: var(--color-white);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+
+@media screen and (max-width: 680px) {
+  .header__logo-mobile {
+    display: block;
+  }
+}
