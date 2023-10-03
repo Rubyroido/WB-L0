@@ -1,5 +1,5 @@
 .accordion__body {
-  max-height: 2000px;
+  max-height: 10000px;
   list-style: none;
   padding: 0;
   display: flex;
