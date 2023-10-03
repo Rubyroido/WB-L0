@@ -106,6 +106,10 @@
 @import url(./blocks/accordion/__item-total/accordion__item-total.css);
 @import url(./blocks/accordion/__item-cost/accordion__item-cost.css);
 @import url(./blocks/accordion/__item-discount/accordion__item-discount.css);
+@import url(./blocks/accordion/__discount__tooltip/accordion__discount-tooltip.css);
+@import url(./blocks/accordion/__discount__tooltip/_active/accordion__discount-tooltip_active.css);
+@import url(./blocks/accordion/__discount-percent/accordion__discount-percent.css);
+@import url(./blocks/accordion/__discount/accordion__discount.css);
 
 @import url(./blocks/delivery/delivery.css);
 @import url(./blocks/delivery/__header/delivery__header.css);

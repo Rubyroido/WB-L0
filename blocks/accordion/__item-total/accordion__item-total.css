@@ -5,6 +5,7 @@
   flex-direction: column;
   gap: 5px;
   align-items: end;
+  position: relative;
 }
 
 .accordion__item-total > s {

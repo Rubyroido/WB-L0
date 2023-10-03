@@ -324,6 +324,21 @@ goods.forEach((item) => {
   const totalCost = item.querySelector('.accordion__item-discount');
   const totalDiscountedCost = item.querySelector('.accordion__item-cost');
   const checkbox = item.querySelector('.custom-checkbox__button');
+  const tooltip = item.querySelector('.accordion__discount-tooltip');
+  const tooltipPercent = tooltip.querySelector('.accordion__discount-percent');
+  const tooltipDiscount = tooltip.querySelector('.accordion__discount');
+
+  let tooltipDiscountSum = Number(totalCost.textContent.split(' ')[0])*discount;
+  // let tooltipDiscountSum = 0;
+
+  totalCost.addEventListener('mouseover', () => {
+    tooltipPercent.textContent = `Скидка ${discount * 100}%`;
+    tooltipDiscount.textContent = `-${tooltipDiscountSum} сом`;
+    tooltip.classList.add('accordion__discount-tooltip_active');
+  })
+  totalCost.addEventListener('mouseout', () => {
+    tooltip.classList.remove('accordion__discount-tooltip_active');
+  })
 
   checkbox.addEventListener('change', () => {
     const isChecked = checkbox.checked;
@@ -362,6 +377,7 @@ goods.forEach((item) => {
 
     let cost = counter * Number(price);
     let discountedCost = cost - (cost * Number(discount));
+    tooltipDiscountSum = cost * Number(discount);
 
     totalCost.textContent = `${cost} сом`;
     totalDiscountedCost.textContent = `${discountedCost} сом`;
@@ -393,6 +409,7 @@ goods.forEach((item) => {
 
     let cost = counter * Number(price);
     let discountedCost = cost - (cost * Number(discount));
+    tooltipDiscountSum = cost * Number(discount);
 
     totalCost.textContent = `${cost} сом`;
     totalDiscountedCost.textContent = `${discountedCost} сом`;
