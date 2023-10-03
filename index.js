@@ -50,7 +50,18 @@ function createCard(item) {
     card.querySelector('.accordion__item-size-mob').classList.add('accordion__item-size-mob_inactive');
   }
   card.querySelector('.accordion__item-storage').textContent = item.storage;
-  card.querySelector('.accordion__item-seller').textContent = item.seller;
+  card.querySelector('.accordion__item-seller').textContent = item.seller.name;
+  card.querySelector('.accordion__tooltip-name').textContent = item.seller.name;
+  card.querySelector('.accordion__tooltip-number').textContent = item.seller.registration;
+  card.querySelector('.accordion__tooltip-adress').textContent = item.seller.adress;
+
+  const cardTooltip = card.querySelector('.accordion__item-hint');
+  cardTooltip.addEventListener('mouseover', () => {
+    card.querySelector('.accordion__tooltip').classList.toggle('accordion__tooltip_active');
+  })
+  cardTooltip.addEventListener('mouseout', () => {
+    card.querySelector('.accordion__tooltip').classList.toggle('accordion__tooltip_active');
+  })
 
   let cardValue = card.querySelector('.accordion__item-value');
   cardValue.value = item.value;

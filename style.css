@@ -89,6 +89,11 @@
 @import url(./blocks/accordion/__item-store/accordion__item-store.css);
 @import url(./blocks/accordion/__item-shop/accordion__item-shop.css);
 @import url(./blocks/accordion/__item-hint/accordion__item-hint.css);
+@import url(./blocks/accordion/__tooltip/accordion__tooltip.css);
+@import url(./blocks/accordion/__tooltip/_active/accordion__tooltip_active.css);
+@import url(./blocks/accordion/__tooltip-name/accordion__tooltip-name.css);
+@import url(./blocks/accordion/__tooltip-number/accordion__tooltip-number.css);
+@import url(./blocks/accordion/__tooltip-adress/accordion__tooltip-adress.css);
 @import url(./blocks/accordion/__item-interaction/accordion__item-interaction.css);
 @import url(./blocks/accordion/__item-counter/accordion__item-counter.css);
 @import url(./blocks/accordion/__item-decrease/accordion__item-decrease.css);
