@@ -259,17 +259,21 @@ const basketCheckboxes = Array.from(accordionBody.querySelectorAll('.custom-chec
 commonCheckboxButton.addEventListener('change', (event) => {
   if (event.target.checked) {
     basketCheckboxes.forEach((checkbox) => {
-      checkbox.checked = true;
+      if (checkbox.checked === false) {
+        checkbox.checked = true;
 
-      const changeEvent = new Event('change', { bubbles: true });
-      checkbox.dispatchEvent(changeEvent);
+        const changeEvent = new Event('change', { bubbles: true });
+        checkbox.dispatchEvent(changeEvent);
+      }
     })
   } else {
     basketCheckboxes.forEach((checkbox) => {
-      checkbox.checked = false;
+      if (checkbox.checked === true) {
+        checkbox.checked = false;
 
-      const changeEvent = new Event('change', { bubbles: true });
-      checkbox.dispatchEvent(changeEvent);
+        const changeEvent = new Event('change', { bubbles: true });
+        checkbox.dispatchEvent(changeEvent);
+      }
     })
   }
 })
@@ -328,7 +332,7 @@ goods.forEach((item) => {
   const tooltipPercent = tooltip.querySelector('.accordion__discount-percent');
   const tooltipDiscount = tooltip.querySelector('.accordion__discount');
 
-  let tooltipDiscountSum = Number(totalCost.textContent.split(' ')[0])*discount;
+  let tooltipDiscountSum = Number(totalCost.textContent.split(' ')[0]) * discount;
   // let tooltipDiscountSum = 0;
 
   totalCost.addEventListener('mouseover', () => {
